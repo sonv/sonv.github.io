@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang='en-us' class="dark" ><meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+
+<title>T-SV</title>
+<link rel="stylesheet" href="https://sonv.github.io/css/eureka.min.css">
+<script defer src="https://sonv.github.io/js/eureka.min.js"></script>
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload"
+  href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Noto+Serif+SC:wght@400;600;700&display=swap"
+  as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/styles/solarized-light.min.css"
+   media="print"
+  onload="this.media='all';this.onload=null" crossorigin>
+<script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/highlight.min.js"
+   crossorigin></script>
+
+<script defer src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14.0/js/all.min.js"
+   integrity="sha256-uNYoXefWRqv&#43;PsIF/OflNmwtKM4lStn9yrz2gVl6ymo="  crossorigin></script>
+
+
+
+
+
+
+
+
+
+
+
+<meta name="description"
+  content="">
+
+
+
+<meta property="og:title" content="T-SV" />
+<meta property="og:type" content="website" />
+
+
+
+<meta property="og:url" content="https://sonv.github.io/" />
+
+
+
+
+
+
+
+
+
+<meta property="og:locale" content="en-us" />
+
+
+
+
+<meta property="og:site_name" content="T-SV" />
+
+
+
+
+
+
+<meta property="og:updated_time" content="2020-08-30T00:00:00&#43;00:00" />
+
+
+
+<meta property="article:section" content="" />
+
+
+<link rel="alternate" type="application/rss+xml" href="https://sonv.github.io/index.xml" title="T-SV" />
+
+<body class="flex flex-col min-h-screen">
+  <header class="fixed flex items-center w-full min-h-16 pl-scrollbar z-50 bg-secondary-bg shadow-sm">
+    <div class="w-full max-w-screen-xl mx-auto"><script>
+    let storageColorScheme = localStorage.getItem("lightDarkMode")
+    if ((storageColorScheme == 'Auto' && window.matchMedia("(prefers-color-scheme: light)").matches) || storageColorScheme == "Light") {
+        document.getElementsByTagName('html')[0].classList.remove('dark')
+    }
+</script>
+<nav class="flex items-center justify-between flex-wrap px-4 py-4 md:py-0">
+    <a href="/" class="mr-6 text-primary-text text-xl font-bold">T-SV</a>
+    <button id="navbar-btn" class="md:hidden flex items-center px-3 py-2" aria-label="Open Navbar">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <div id="target"
+        class="hidden block md:flex md:flex-grow md:justify-between md:items-center w-full md:w-auto text-primary-text z-20">
+        <div class="md:flex md:h-16 text-sm md:flex-grow pb-4 md:pb-0 border-b md:border-b-0">
+            <a href="/teaching/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  mr-4">Teaching</a>
+            <a href="/misc/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  mr-4">Misc.</a>
+        </div>
+
+        <div class="flex">
+            <div class="relative pt-4 md:pt-0">
+                <div class="cursor-pointer hover:text-eureka" id="lightDarkMode">
+                    <i class="fas fa-moon"></i>
+                </div>
+                <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-30" id="is-open">
+                </div>
+                <div class="absolute flex flex-col left-0 md:left-auto right-auto md:right-0 hidden bg-secondary-bg w-48 rounded py-2 border border-tertiary-bg cursor-pointer z-40"
+                    id='lightDarkOptions'>
+                    <span class="px-4 py-1 hover:text-eureka" name="Light">Light</span>
+                    <span class="px-4 py-1 hover:text-eureka" name="Dark">Dark</span>
+                    <span class="px-4 py-1 hover:text-eureka" name="Auto">Auto</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-0" id="is-open-mobile">
+    </div>
+
+</nav>
+<script>
+    let element = document.getElementById('lightDarkMode')
+    if (storageColorScheme == 'Auto') {
+        element.firstElementChild.classList.remove('fa-moon')
+        element.firstElementChild.setAttribute("data-icon", 'adjust')
+        element.firstElementChild.classList.add('fa-adjust')
+        document.addEventListener('DOMContentLoaded', () => {
+            switchMode('Auto')
+        })
+    } else if (storageColorScheme == "Light") {
+        element.firstElementChild.classList.remove('fa-moon')
+        element.firstElementChild.setAttribute("data-icon", 'sun')
+        element.firstElementChild.classList.add('fa-sun')
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        getcolorscheme();
+        switchBurger();
+    });
+</script>
+</div>
+  </header>
+  <main class="flex-grow pt-16">
+  
+  
+  
+    
+      
+  
+
+  
+
+  
+  
+  
+
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+  
+
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+
+    
+    
+    
+    
+    
+  
+
+  <div class="pl-scrollbar bg-secondary-bg" 
+    >
+    <div class="max-w-screen-xl mx-auto">
+      <div id="about" class="lg:w-3/4 mx-auto px-6 md:px-8 xl:px-12 py-12">
+        
+  
+
+  
+    <div class="flex flex-col md:flex-row items-center justify-center mb-12">
+  
+  
+    <div class="flex-none w-48 mx-auto md:ml-0 md:mr-8 md:pr-8 md:border-r">
+      <img src="https://sonv.github.io/images/profile.jpg" class="rounded-full" alt="Avatar">
+    </div>
+  
+  <div class="flex-grow mt-4 md:mt-0">
+    <div class="text-3xl py-4">Truong-Son Van</div>
+    <div class="w-3/12 xl:w-2/12 border-b"></div>
+
+    <div class="flex items-center pt-4">
+      
+        <i class="fas fa-user"></i>
+      
+      <div class="flex flex-wrap">
+        
+          <span class="pl-4"><a href="mailto:sonv@andrew.cmu.edu">sonv@andrew.cmu.edu</a></span>
+        
+
+        
+          <a href="https://www.math.cmu.edu" class="pl-4">Department of Mathematical Sciences, Carnegie Mellon University</a>
+        
+      </div>
+
+    </div>
+
+    
+      <div class="py-8 text-lg leading-normal">
+        <p>Starting July 2021, I will be a Hans Rademacher Instructor in the Department of Mathematics at the University of Pennsylvania. Prior to Fall 2021, I was a student of Gautam Iyer and Bob Pego at Carnegie Mellon University.</p>
+<p>My current research interest lies in some intersection between partial differential equations and probability. I am keen on proving theorems about phenomena that come from God&rsquo;s beautiful world and I thank Him everyday that I can do it with peace and joy. These days, I spend a lot of time thinking about the advection-diffusion equation, the coagulation-fragmentation equation, and the Hamilton-Jacobi equation.</p>
+
+      </div>
+    
+  </div>
+  <div class="flex md:flex-col justify-center items-end ml-8">
+    
+    
+      
+      
+      
+      
+      
+      <div class="pb-2 pr-4 md:pr-0 pt-4 md:pt-0">
+        <a href=""><i class="&lt;nil&gt; fa-&lt;nil&gt;"></i></a>
+      </div>
+    
+  </div>
+</div>
+<div class="content">
+  <h2 id="publications-and-preprints">Publications and Preprints</h2>
+<ol>
+<li>
+<p>(with <a href="https://www.math.cmu.edu/~gautam">G. Iyer</a>) Bounds on the heat transfer rate via passive advection. [<a href="https://arxiv.org/abs/2101.10287">Arxiv</a>]</p>
+</li>
+<li>
+<p>(with H. Mitake and <a href="http://www.math.wisc.edu/~hung/">H.V. Tran</a>) Large time behavior for a Hamilton-Jacobi equation in a critical
+Coagulation-Fragmentation model.
+[<a href="https://dx.doi.org/10.4310/CMS.2021.v19.n2.a8">Communications in Mathematical Sciences (2021)</a>,
+<a href="https://arxiv.org/abs/2004.13619">Arxiv</a>]</p>
+</li>
+<li>
+<p>(with <a href="http://www.math.wisc.edu/~hung/">H.V. Tran</a>) Coagulation-Fragmentation equations with multiplicative coagulation kernel and constant fragmentation kernel.
+[<a href="https://doi.org/10.1002/cpa.21979">Communications on Pure and Applied Mathematics (2021)</a>,
+<a href="https://arxiv.org/abs/1910.13424">Arxiv</a>]</p>
+</li>
+<li>
+<p>(with <a href="http://www.math.cmu.edu/~bobpego/">R.L. Pego</a>) Existence of solitary waves in one dimensional peridynamics.
+[<a href="https://rdcu.be/bargo">Journal of Elasticity (2018)</a>,
+<a href="https://arxiv.org/abs/1802.00516">Arxiv</a>].</p>
+</li>
+</ol>
+<h2 id="selected-presentations">Selected presentations</h2>
+<ul>
+<li>
+<p>(Feb. 2021) Coagulation-Fragmentation from Hamilton-Jacobi perspective, PDE Seminar at  University of Tennessee - Knoxville, Knoxville, TN.</p>
+</li>
+<li>
+<p>(Nov. 2020) Coagulation-Fragmentation from Hamilton-Jacobi perspective, Seminar at University of Bonn, Bonn, Germany.</p>
+</li>
+<li>
+<p>(2020&ndash; postponed due to COVID-19) Coagulation-Fragmentation via Hamilton-Jacobi, Madison Workshop in PDE 2020 , University of Wisconsin at Madison, Madison, WI.</p>
+</li>
+<li>
+<p>(2020&ndash; postponed due to COVID-19) Coagulation-Fragmentation equations with multiplicative coagulation and constant
+fragmentation, The 13th AIMS Conference on Dynamical Systems, Differential Equations and
+Applications, Special Section: Nonlinear models in kinetic theory, collective behavior, and fluid
+dynamics, Atlanta, GA.</p>
+</li>
+<li>
+<p>(July 2018) Existence of solitary waves in one dimensional peridynamics, SIAM conference on mathematical aspects of material sciences, Portland, OR.</p>
+</li>
+</ul>
+
+</div>
+
+  
+
+      </div>
+    </div>
+  </div>
+
+    
+
+  
+  
+  </main>
+  <footer class="pl-scrollbar">
+    <div class="w-full max-w-screen-xl mx-auto"><div class="text-center p-6 pin-b">
+    <p class="text-sm text-tertiary-text"> Powered by the <a href="https://github.com/wangchucheng/hugo-eureka" class="hover:text-eureka">Eureka</a> theme for <a href="https://gohugo.io" class="hover:text-eureka">Hugo</a></p>
+</div></div>
+  </footer>
+</body>
+
+</html>
