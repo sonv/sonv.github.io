@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Random useful things on T-SV</title>
-    <link>https://www.tsvan.xyz/misc/</link>
+    <link>www.tsvan.xyz/misc/</link>
     <description>Recent content in Random useful things on T-SV</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 30 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://www.tsvan.xyz/misc/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 30 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="www.tsvan.xyz/misc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Turning your camera to a lightboard using OBS</title>
-      <link>https://www.tsvan.xyz/misc/ipad-lightboard./</link>
+      <link>www.tsvan.xyz/misc/ipad-lightboard./</link>
       <pubDate>Sun, 30 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://www.tsvan.xyz/misc/ipad-lightboard./</guid>
+      <guid>www.tsvan.xyz/misc/ipad-lightboard./</guid>
       <description>Teaching online has become a thing due to COVID-19. During the Summer of 2020, I created a documentation on how to build a Lightboard here.
 There is also a version of the Lightboard using OBS and any writing device that could be broadcast to the computer (ipad, android, surface, etc.) by playing around with chroma key and green screen. This is not only great for teaching but also good for online seminar presentations as the visual effect is usually much better than what meeting platforms can offer.</description>
     </item>

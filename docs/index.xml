@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Docs on T-SV</title>
-    <link>https://www.tsvan.xyz/docs/</link>
+    <link>www.tsvan.xyz/docs/</link>
     <description>Recent content in Docs on T-SV</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://www.tsvan.xyz/docs/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="www.tsvan.xyz/docs/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

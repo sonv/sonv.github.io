@@ -2,21 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.tsvan.xyz/misc/</loc>
+    <loc>www.tsvan.xyz/misc/</loc>
     <lastmod>2020-08-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.tsvan.xyz/</loc>
+    <loc>www.tsvan.xyz/</loc>
     <lastmod>2020-08-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.tsvan.xyz/misc/ipad-lightboard./</loc>
+    <loc>www.tsvan.xyz/misc/ipad-lightboard./</loc>
     <lastmod>2020-08-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.tsvan.xyz/categories/</loc>
+    <loc>www.tsvan.xyz/categories/</loc>
   </url><url>
-    <loc>https://www.tsvan.xyz/docs/</loc>
+    <loc>www.tsvan.xyz/docs/</loc>
   </url><url>
-    <loc>https://www.tsvan.xyz/tags/</loc>
+    <loc>www.tsvan.xyz/tags/</loc>
   </url><url>
-    <loc>https://www.tsvan.xyz/teaching/</loc>
+    <loc>www.tsvan.xyz/teaching/</loc>
   </url>
 </urlset>
