@@ -2,13 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://www.tsvan.xyz/teaching/fall-2021/</loc>
+    <lastmod>2021-07-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.tsvan.xyz/</loc>
+    <lastmod>2021-07-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.tsvan.xyz/teaching/</loc>
+    <lastmod>2021-07-11T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://www.tsvan.xyz/misc/</loc>
     <lastmod>2020-08-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.tsvan.xyz/</loc>
-    <lastmod>2020-08-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.tsvan.xyz/misc/ipad-lightboard./</loc>
+    <loc>https://www.tsvan.xyz/misc/ipad-lightboard/</loc>
     <lastmod>2020-08-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.tsvan.xyz/categories/</loc>
@@ -16,7 +22,5 @@
     <loc>https://www.tsvan.xyz/docs/</loc>
   </url><url>
     <loc>https://www.tsvan.xyz/tags/</loc>
-  </url><url>
-    <loc>https://www.tsvan.xyz/teaching/</loc>
   </url>
 </urlset>

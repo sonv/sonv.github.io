@@ -6,13 +6,24 @@
     <description>Recent content on T-SV</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 30 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://www.tsvan.xyz/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 11 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.tsvan.xyz/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fall 2021: Math 170, Ideas in Mathematics</title>
+      <link>https://www.tsvan.xyz/teaching/fall-2021/</link>
+      <pubDate>Sun, 11 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.tsvan.xyz/teaching/fall-2021/</guid>
+      <description>Lectures: MWF, 1:45pm-2:45pm
+Instructor: Truong-Son Van
+To be updated</description>
+    </item>
+    
     <item>
       <title>Turning your camera to a lightboard using OBS</title>
-      <link>https://www.tsvan.xyz/misc/ipad-lightboard./</link>
+      <link>https://www.tsvan.xyz/misc/ipad-lightboard/</link>
       <pubDate>Sun, 30 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://www.tsvan.xyz/misc/ipad-lightboard./</guid>
+      <guid>https://www.tsvan.xyz/misc/ipad-lightboard/</guid>
       <description>Teaching online has become a thing due to COVID-19. During the Summer of 2020, I created a documentation on how to build a Lightboard here.
 There is also a version of the Lightboard using OBS and any writing device that could be broadcast to the computer (ipad, android, surface, etc.) by playing around with chroma key and green screen. This is not only great for teaching but also good for online seminar presentations as the visual effect is usually much better than what meeting platforms can offer.</description>
     </item>

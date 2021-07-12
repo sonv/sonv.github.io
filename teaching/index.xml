@@ -5,6 +5,18 @@
     <link>https://www.tsvan.xyz/teaching/</link>
     <description>Recent content in Teaching on T-SV</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://www.tsvan.xyz/teaching/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Sun, 11 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.tsvan.xyz/teaching/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fall 2021: Math 170, Ideas in Mathematics</title>
+      <link>https://www.tsvan.xyz/teaching/fall-2021/</link>
+      <pubDate>Sun, 11 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.tsvan.xyz/teaching/fall-2021/</guid>
+      <description>Lectures: MWF, 1:45pm-2:45pm
+Instructor: Truong-Son Van
+To be updated</description>
+    </item>
+    
   </channel>
 </rss>
