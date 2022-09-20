@@ -2,7 +2,7 @@
 layout: page 
 title: Reading Group 
 ---
-This page keeps the information of the STEM faculty reading group during the current term.
+This page keeps the information of the FUV STEM Faculty reading group during the current term.
 For a full record, please go to this following [github page](https://github.com/sonv/reading-group).
 
 ## Fall 2022
