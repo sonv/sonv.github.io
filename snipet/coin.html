@@ -1,25 +1,44 @@
 <html>
-    <body>
-        <body>
-  <button id="flp" type="button">Flip the coin</button>
-  <div id="rslt"></div>
-  <script>
-    let button = document.getElementById("flp");
-    let result = document.getElementById("rslt");
-    let p = Math.random();
-
-    function fpClick(event) {
-      let num = Math.random();
-
-      if (num < 0.5) {
-        result.innerHTML = "You got Head" ;
-      } else {
-        result.innerHTML = "You got Tail" ;
-      }
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    .block {
+      display: block;
+      width: 100%;
+      border: none;
+      background-color: #04AA6D;
+      color: white;
+      padding: 30px 28px;
+      font-size: 16px;
+      cursor: pointer;
+      text-align: center;
     }
 
-    button.addEventListener("click", fpClick);
-  </script>
-</body>
+    .block:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    </style>
+    </head>
+    <body>
+      <button id="flp" type="button" class="block">Flip the coin</button>
+      <div id="rslt"></div>
+      <script>
+        let button = document.getElementById("flp");
+        let result = document.getElementById("rslt");
+        let p = Math.random();
+
+        function fpClick(event) {
+          let num = Math.random();
+
+          if (num < 0.5) {
+            result.innerHTML = "You got Head" ;
+          } else {
+            result.innerHTML = "You got Tail" ;
+          }
+        }
+
+        button.addEventListener("click", fpClick);
+      </script>
     </body>
 </html>
