@@ -1,0 +1,25 @@
+<html>
+    <body>
+        <body>
+  <button id="flp" type="button">Flip the coin</button>
+  <div id="rslt"></div>
+  <script>
+    let button = document.getElementById("flp");
+    let result = document.getElementById("rslt");
+    let p = Math.random();
+
+    function fpClick(event) {
+      let num = Math.random();
+
+      if (num < 0.5) {
+        result.innerHTML = "You got Head" ;
+      } else {
+        result.innerHTML = "You got Tail" ;
+      }
+    }
+
+    button.addEventListener("click", fpClick);
+  </script>
+</body>
+    </body>
+</html>
