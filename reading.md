@@ -16,7 +16,7 @@ Preskill's [Video Lectures](https://www.youtube.com/playlist?list=PL0ojjrEqIyPy-
 UC Berkeley Vazirani's [class](https://www.youtube.com/playlist?list=PLXEJgM3ycgQW5ysL69uaEdPoof4it6seB)
 
 ### Schedule
-- Sept 26: Truong-Son Van, Introduction and basics
+- Sept 26: Truong-Son Van, Introduction and basics, [slides](https://github.com/sonv/reading-group/blob/main/Quantum-Computation/latexbuild/1-Intro.pdf)
 - Oct 3: Truong-Son Van, Basics (cont.)
 - Oct 10:
 - Oct 17: 
