@@ -17,7 +17,7 @@ UC Berkeley Vazirani's [class](https://www.youtube.com/playlist?list=PLXEJgM3ycg
 
 ### Schedule
 - Sept 26: Truong-Son Van, Introduction and basics, [slides](https://github.com/sonv/reading-group/blob/main/Quantum-Computation/latexbuild/1-Intro.pdf)
-- Oct 3: Truong-Son Van, Basics (cont.)
-- Oct 10:
+- Oct 3: No meeting
+- Oct 10: Truong-Son Van, Basics (cont.)
 - Oct 17: 
 
