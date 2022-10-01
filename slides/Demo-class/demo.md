@@ -214,8 +214,19 @@
 <h2> From the heart of math</h2>
 </section>
 <section data-auto-animate>
-<h2> From the heart of math</h2>
 <h2> to the heart of us</h2>
+<div data-animate data-src="Demo-class/heart.svg">
+<!--
+{
+"setup": [
+{
+"element": "#heart",
+"modifier": "function() { this.animate(1500).ease('<>').scale(.9).loop(true,true);}"
+}
+]
+}
+-->
+</div>
 </section>
 
 
@@ -223,3 +234,13 @@
 <iframe width="800" height="450" src=https://www.youtube.com/embed/Qcv1IqHWAzg frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 
+## Bonus
+<iframe width="800" height="450" src=https://www.youtube.com/embed/A0WGp38PRvg frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+Our Board Member has something to say as well
+
+
+<div>
+  <img src="Demo-class/seal.png" alt="Seal" >
+  <p>The End</p>
+</div>
