@@ -65,17 +65,17 @@
 </section>
 <section data-auto-animate>
   <h2>The fun of Logic</h2>
-  <p>True or False? </p>
-  <blockquote><blockquote style="font-size: 2em">This statement is false.</blockquote></blockquote>
-</section>
-<section data-auto-animate>
-  <h2>The fun of Logic</h2>
-  <p>True or False? </p>
+  <p>Is the following statement True or False? </p>
   <blockquote><blockquote style="font-size: 2em">There is no truth.</blockquote></blockquote>
 </section>
 <section data-auto-animate>
   <h2>The fun of Logic</h2>
-  <p>True or False? </p>
+  <p>Is the following statement True or False? </p>
+  <blockquote><blockquote style="font-size: 2em">This statement is false.</blockquote></blockquote>
+</section>
+<section data-auto-animate>
+  <h2>The fun of Logic</h2>
+  <p>Is the following statement True or False? </p>
   <blockquote><blockquote style="font-size: 2em">$A=B$, $B=C$ therefore $A=C$</blockquote></blockquote>
 </section>
 
@@ -113,6 +113,27 @@
 
 ## Forget 
 ## Move on <!-- .element: class="fragment" -->
+
+
+
+<section data-auto-animate>
+<h2> What is mathematics? </h2>
+</section>
+<section data-auto-animate>
+<h2> What is mathematics? </h2>
+     <p> Mathema (μάθημα): something that is learned  </p>
+</section>
+<section data-auto-animate>
+<h2> What is mathematics? </h2>
+     <p> Mathema (μάθημα): something that is learned  </p>
+     <p> What can you learn? </p>
+</section>
+<section data-auto-animate>
+<h2> What is mathematics? </h2>
+     <p> Mathema (μάθημα): something that is learned  </p>
+     <p> What can you learn? </p>
+     <p> How can you systematically learn? </p>
+</section>
 
 
 
@@ -160,28 +181,6 @@
 
 
 ## So...
-
-
-
-<section data-auto-animate>
-<h2> What is mathematics? </h2>
-</section>
-<section data-auto-animate>
-<h2> What is mathematics? </h2>
-     <p> Mathema (μάθημα): something that is learned  </p>
-</section>
-<section data-auto-animate>
-<h2> What is mathematics? </h2>
-     <p> Mathema (μάθημα): something that is learned  </p>
-     <p> What can you learn? </p>
-</section>
-<section data-auto-animate>
-<h2> What is mathematics? </h2>
-     <p> Mathema (μάθημα): something that is learned  </p>
-     <p> What can you learn? </p>
-     <p> How can you systematically learn? </p>
-</section>
-
 
 
 
