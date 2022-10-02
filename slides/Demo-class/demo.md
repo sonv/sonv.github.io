@@ -36,6 +36,22 @@
 - Different topics applied mathematics
 
 
+## What to expect from today
+>"The more I learn, the more I realize how much I don't know."
+-- Albert Einstein<!-- .element: class="fragment" -->
+
+>"I can write no more. All that I have written seems like straw."
+-- Thomas Aquinas<!-- .element: class="fragment" -->
+
+
+
+
+## Agenda
+- Logic<!-- .element: class="fragment" -->
+- Mathematical logic<!-- .element: class="fragment" -->
+- An Application of math<!-- .element: class="fragment" -->
+
+
 
 <section data-auto-animate>
   <h1>Business</h1>
