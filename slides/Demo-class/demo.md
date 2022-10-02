@@ -116,6 +116,10 @@
 
 
 
+## So...
+
+
+
 <section data-auto-animate>
 <h2> What is mathematics? </h2>
 </section>
@@ -177,10 +181,6 @@
     <li> Principle of explosion </li>
 </ul>
 </section>
-
-
-
-## So...
 
 
 
