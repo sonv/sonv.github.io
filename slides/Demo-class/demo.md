@@ -159,6 +159,32 @@
 
 
 
+## So...
+
+
+
+<section data-auto-animate>
+<h2> What is mathematics? </h2>
+</section>
+<section data-auto-animate>
+<h2> What is mathematics? </h2>
+     <p> Mathema (μάθημα): something that is learned  </p>
+</section>
+<section data-auto-animate>
+<h2> What is mathematics? </h2>
+     <p> Mathema (μάθημα): something that is learned  </p>
+     <p> What can you learn? </p>
+</section>
+<section data-auto-animate>
+<h2> What is mathematics? </h2>
+     <p> Mathema (μάθημα): something that is learned  </p>
+     <p> What can you learn? </p>
+     <p> How can you systematically learn? </p>
+</section>
+
+
+
+
 <section data-auto-animate>
 <h2> Mathematical logic </h2>
 </section>
@@ -234,7 +260,9 @@
 <iframe width="800" height="450" src=https://www.youtube.com/embed/Qcv1IqHWAzg frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 
-## Bonus
+## What about creativity? 
+
+
 <iframe width="800" height="450" src=https://www.youtube.com/embed/A0WGp38PRvg frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 Our Board Member has something to say as well
@@ -242,5 +270,9 @@ Our Board Member has something to say as well
 
 <div>
   <img src="Demo-class/seal.png" alt="Seal" >
-  <p>The End</p>
+  <p>Thanks!</p>
 </div>
+
+
+
+# Q \& A
