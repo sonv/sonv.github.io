@@ -21,5 +21,9 @@ Other useful resources:
 - Sept 26: Truong-Son Van, Introduction and basics, [slides](https://github.com/sonv/reading-group/blob/main/Quantum-Computation/latexbuild/1-Intro.pdf)
 - Oct 3: No meeting
 - Oct 10: Truong-Son Van, Basics (cont.)
-- Oct 17: 
+- Oct 17: Truong-Son Van, Qubits 
+- Oct 24: Minh Doan, Physical intepretation
+- Oct 31: No meeting
+- Nov 7: Mid-term break
+- Nov 14: Minh Doan, quantum circuit
 
