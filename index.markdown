@@ -15,7 +15,7 @@ I am particularly keen on turning real-world phenomena into theorems.
 Email: {{ site.author.email}}
 
 ## Publications and Preprints
-1. (with [H.V. Tran](http://www.math.wisc.edu/~hung/)) Local mass-conserving solution for a critical Coagulation-Fragmentation equation. [2022, [Arxiv](https://arxiv.org/abs/2202.03394)]
+1. (with [H.V. Tran](http://www.math.wisc.edu/~hung/)) Local mass-conserving solution for a critical Coagulation-Fragmentation equation. [2023, [Journal of Differential Equations](https://www.sciencedirect.com/science/article/pii/S0022039622007252?dgcid=author), [Arxiv](https://arxiv.org/abs/2202.03394)]
 
 1. (with [G. Iyer](https://www.math.cmu.edu/~gautam)) Bounds on the heat transfer rate via passive advection. [[SIAM Journal of Mathematical Analysis (2021)](https://epubs.siam.org/doi/10.1137/21M1394497), 
 [Arxiv](https://arxiv.org/abs/2101.10287)]
