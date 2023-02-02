@@ -1,5 +1,6 @@
 ---
 layout: page 
+published: false
 title: Reading Group 
 ---
 This page keeps the information of the FUV STEM Faculty reading group during the current term.
