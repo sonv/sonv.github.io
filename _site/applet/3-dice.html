@@ -1,0 +1,54 @@
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    body{
+        font-family:Open Sans,  sans-serif;
+        font-size: 40px;
+    }
+
+    .block {
+      display: block;
+      width: 100%;
+      border: none;
+      background-color: #04AA6D;
+      color: white;
+      padding: 30px 28px;
+      font-size: 16px;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    .block:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    </style>
+    </head>
+    <body>
+      <button id="flp" type="button" class="block">Roll the dice</button>
+      <div id="rslt"></div>
+      <script>
+        let button = document.getElementById("flp");
+        let result = document.getElementById("rslt");
+        let p1 = Math.random();
+        let p2 = Math.random();
+        let q1 = Math.min(p1,p2);
+        let q2 = Math.max(p1,p2);
+
+        function fpClick(event) {
+          let num = Math.random();
+
+          if (num < q1) {
+            result.innerHTML = "You got I";
+          } else if (num<q2) {
+            result.innerHTML = "You got II";
+          } else {
+            result.innerHTML = "You got III";
+          }
+        }
+
+        button.addEventListener("click", fpClick);
+      </script>
+    </body>
+</html>
