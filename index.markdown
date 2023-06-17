@@ -14,9 +14,6 @@ I am particularly keen on turning real-world phenomena into theorems.
 ## Contact
 Email: {{ site.author.email}}
 
-## FUV Reading Group
-Please go here: [https://www.tsvan.xyz/reading-group/](https://www.tsvan.xyz/reading-group/)
-
 ## Publications and Preprints
 1. (with [H.V. Tran](http://www.math.wisc.edu/~hung/)) Local mass-conserving solution for a critical Coagulation-Fragmentation equation. [2023, [Journal of Differential Equations](https://www.sciencedirect.com/science/article/pii/S0022039622007252?dgcid=author), [Arxiv](https://arxiv.org/abs/2202.03394)]
 
