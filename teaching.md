@@ -2,11 +2,12 @@
 layout: page 
 title: Teaching
 ---
-This page lists my teaching. For more details about each specific course, 
-please see my [Github](https://github.com/sonv/Teaching-Public).
-
 
 ### Fulbright University Vietnam
+- Spring 2024:
+    - MATH 104: [Multivarialble Calculus](https://www.tsvan.xyz/MultiCalc/)
+    - MATH 310: [Mathematical Statistics](https://www.tsvan.xyz/MathStat/)
+
 - Fall 2023:
     - MATH 101: Calculus
     - MATH 102: Ideas of Mathematics
