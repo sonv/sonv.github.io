@@ -7,8 +7,8 @@ profile_picture:
 I am a Mathematician located in Ho Chi Minh city, Vietnam. 
 My day job is to lecture and advise students at Fulbright University Vietnam.
 
-My research and findings, based on my
-wn personal funding and done at my home office.
+My research and findings are based on my
+ personal funding and done at my home office.
 Therefore, all my findings and statements are of my own, 
 not related to the university.
 
