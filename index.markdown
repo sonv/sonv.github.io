@@ -6,11 +6,8 @@ profile_picture:
 ---
 I am a Mathematician located in Ho Chi Minh city, Vietnam. 
 My day job is to lecture and advise students at Fulbright University Vietnam.
-
-My research and findings are based on my
- personal funding and done at my home office.
-Therefore, all my findings and statements are of my own, 
-not related to the university.
+At night, I conduct mathematical research via my
+ personal funding, at my home office.
 
 
 I was a Hans Rademacher Instructor in the Department of Mathematics at the 
