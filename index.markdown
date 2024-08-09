@@ -5,6 +5,14 @@ profile_picture:
     alt: Profile
 ---
 I am a Mathematician located in Ho Chi Minh city, Vietnam. 
+My day job is to lecture and advise students at Fulbright University Vietnam.
+
+My research and findings, based on my
+wn personal funding and done at my home office.
+Therefore, all my findings and statements are of my own, 
+not related to the university.
+
+
 I was a Hans Rademacher Instructor in the Department of Mathematics at the 
 University of Pennsylvania from 2021-2022. 
 Prior to Fall 2021, I was a student of [Gautam Iyer](https://www.math.cmu.edu/~gautam/) and [Bob Pego](https://www.math.cmu.edu/~bobpego/) at Carnegie Mellon University. 
