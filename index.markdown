@@ -17,8 +17,12 @@ to go back to Vietnam).
 I was a Hans Rademacher Instructor in the Department of Mathematics at the 
 University of Pennsylvania from 2021-2022. 
 Prior to Fall 2021, I was a student of [Gautam Iyer](https://www.math.cmu.edu/~gautam/) and [Bob Pego](https://www.math.cmu.edu/~bobpego/) at Carnegie Mellon University. 
-My current research interest lies in some intersection between partial differential equations and probability. 
 I am particularly keen on turning real-world phenomena into theorems.
+My current research interests include: 
+
+- Quantum foundation
+- Applications of stochastic processes in sciences 
+- Partial differential equations 
 
 ## Contact
 Email: {{ site.author.email}}
