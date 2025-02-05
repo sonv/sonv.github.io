@@ -32,20 +32,20 @@ Email: {{ site.author.email}}
 
 1. (with H.V. Tran) Local mass-conserving solution for a critical Coagulation-Fragmentation equation. [2023, [Journal of Differential Equations](https://www.sciencedirect.com/science/article/pii/S0022039622007252?dgcid=author), [Arxiv](https://arxiv.org/abs/2202.03394)]
 
-1. (with G. Iyer) Bounds on the heat transfer rate via passive advection. [[SIAM Journal of Mathematical Analysis (2021)](https://epubs.siam.org/doi/10.1137/21M1394497), 
+1. (with G. Iyer) Bounds on the heat transfer rate via passive advection. [2021, [SIAM Journal of Mathematical Analysis](https://epubs.siam.org/doi/10.1137/21M1394497), 
 [Arxiv](https://arxiv.org/abs/2101.10287)]
 
 1. (with H. Mitake and H.V. Tran) Large time behavior for a Hamilton-Jacobi equation in a critical
   Coagulation-Fragmentation model. 
-  [[Communications in Mathematical Sciences (2021)](https://dx.doi.org/10.4310/CMS.2021.v19.n2.a8), 
+  [2021, [Communications in Mathematical Sciences](https://dx.doi.org/10.4310/CMS.2021.v19.n2.a8), 
   [Arxiv](https://arxiv.org/abs/2004.13619)]
 
 1. (with H.V. Tran) Coagulation-Fragmentation equations with multiplicative coagulation kernel and constant fragmentation kernel. 
-[[Communications on Pure and Applied Mathematics (2021)](https://doi.org/10.1002/cpa.21979),
+[2021, [Communications on Pure and Applied Mathematics](https://doi.org/10.1002/cpa.21979),
  [Arxiv](https://arxiv.org/abs/1910.13424)]
 
 1. (with R.L. Pego) Existence of solitary waves in one dimensional peridynamics. 
-[[Journal of Elasticity (2018)](https://rdcu.be/bargo),
+[2018, [Journal of Elasticity](https://rdcu.be/bargo),
  [Arxiv](https://arxiv.org/abs/1802.00516)].
 
 - Investigations of the dynamics of models of heat transfer and clustering. 
