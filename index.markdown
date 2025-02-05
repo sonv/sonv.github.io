@@ -30,21 +30,21 @@ Email: {{ site.author.email}}
 ## Publications and Preprints
 1. (with A. Jordan and D. Snoke) Measurement time of weak measurements on large entangled systems. [2025, [Arxiv](https://arxiv.org/abs/2410.08484)]
 
-1. (with [H.V. Tran](http://www.math.wisc.edu/~hung/)) Local mass-conserving solution for a critical Coagulation-Fragmentation equation. [2023, [Journal of Differential Equations](https://www.sciencedirect.com/science/article/pii/S0022039622007252?dgcid=author), [Arxiv](https://arxiv.org/abs/2202.03394)]
+1. (with H.V. Tran) Local mass-conserving solution for a critical Coagulation-Fragmentation equation. [2023, [Journal of Differential Equations](https://www.sciencedirect.com/science/article/pii/S0022039622007252?dgcid=author), [Arxiv](https://arxiv.org/abs/2202.03394)]
 
-1. (with [G. Iyer](https://www.math.cmu.edu/~gautam)) Bounds on the heat transfer rate via passive advection. [[SIAM Journal of Mathematical Analysis (2021)](https://epubs.siam.org/doi/10.1137/21M1394497), 
+1. (with G. Iyer) Bounds on the heat transfer rate via passive advection. [[SIAM Journal of Mathematical Analysis (2021)](https://epubs.siam.org/doi/10.1137/21M1394497), 
 [Arxiv](https://arxiv.org/abs/2101.10287)]
 
-1. (with H. Mitake and [H.V. Tran](http://www.math.wisc.edu/~hung/)) Large time behavior for a Hamilton-Jacobi equation in a critical
+1. (with H. Mitake and H.V. Tran) Large time behavior for a Hamilton-Jacobi equation in a critical
   Coagulation-Fragmentation model. 
   [[Communications in Mathematical Sciences (2021)](https://dx.doi.org/10.4310/CMS.2021.v19.n2.a8), 
   [Arxiv](https://arxiv.org/abs/2004.13619)]
 
-1. (with [H.V. Tran](http://www.math.wisc.edu/~hung/)) Coagulation-Fragmentation equations with multiplicative coagulation kernel and constant fragmentation kernel. 
+1. (with H.V. Tran) Coagulation-Fragmentation equations with multiplicative coagulation kernel and constant fragmentation kernel. 
 [[Communications on Pure and Applied Mathematics (2021)](https://doi.org/10.1002/cpa.21979),
  [Arxiv](https://arxiv.org/abs/1910.13424)]
 
-1. (with [R.L. Pego](http://www.math.cmu.edu/~bobpego/)) Existence of solitary waves in one dimensional peridynamics. 
+1. (with R.L. Pego) Existence of solitary waves in one dimensional peridynamics. 
 [[Journal of Elasticity (2018)](https://rdcu.be/bargo),
  [Arxiv](https://arxiv.org/abs/1802.00516)].
 
