@@ -21,7 +21,7 @@ I am particularly keen on turning real-world phenomena into theorems.
 My current research interests include: 
 
 - Quantum foundation
-- Applications of stochastic processes in sciences 
+- Diffusion approximations of complex systems 
 - Partial differential equations 
 
 ## Contact
