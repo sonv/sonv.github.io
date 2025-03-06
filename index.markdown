@@ -28,7 +28,7 @@ My current research interests include:
 Email: {{ site.author.email}}
 
 ## Publications and Preprints
-1. (with A. Jordan and D. Snoke) Measurement time of weak measurements on large entangled systems. [2025, [Arxiv](https://arxiv.org/abs/2410.08484)]
+1. (with A. Jordan and D. Snoke) Measurement time of weak measurements on large entangled systems. [2025, Accepted to Physical Review A, [Arxiv](https://arxiv.org/abs/2410.08484)]
 
 1. (with H.V. Tran) Local mass-conserving solution for a critical Coagulation-Fragmentation equation. [2023, [Journal of Differential Equations](https://www.sciencedirect.com/science/article/pii/S0022039622007252?dgcid=author), [Arxiv](https://arxiv.org/abs/2202.03394)]
 
