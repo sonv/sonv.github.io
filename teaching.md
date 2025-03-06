@@ -4,9 +4,17 @@ title: Teaching
 ---
 
 ### Fulbright University Vietnam
+- Spring 2025:
+    - MATH 104: Multivarialble Calculus
+    - MATH 310: Topology and Measure theory 
+
+- Fall 2024:
+    - MATH 101: Calculus
+    - MATH 102: Ideas of Mathematics
+
 - Spring 2024:
-    - MATH 104: [Multivarialble Calculus](https://www.tsvan.xyz/MultiCalc/)
-    - MATH 310: [Mathematical Statistics](https://www.tsvan.xyz/MathStat/)
+    - MATH 104: Multivarialble Calculus
+    - MATH 310: Mathematical Statistics
 
 - Fall 2023:
     - MATH 101: Calculus
