@@ -51,18 +51,3 @@ Email: {{ site.author.email}}
 - Investigations of the dynamics of models of heat transfer and clustering. 
 [PhD Thesis (2021), [pdf](pdfs/Van-Thesis.pdf)].
 
-## Selected presentations 
-- (Jul. 2021) Tail dynamics of a singularly perturbed coagulation-fragmentation equation, Encontro Nacional SPM 2021, parallel session Deterministic and stochastic coagulation-fragmentation models, Portugal (online).
-
-- (Feb. 2021) Coagulation-Fragmentation from Hamilton-Jacobi perspective, PDE Seminar at  University of Tennessee - Knoxville, Knoxville, TN (online).
-
-- (Nov. 2020) Coagulation-Fragmentation from Hamilton-Jacobi perspective, Seminar at University of Bonn, Bonn, Germany (online).
-
-- (2020-- postponed due to COVID-19) Coagulation-Fragmentation via Hamilton-Jacobi, Madison Workshop in PDE 2020 , University of Wisconsin at Madison, Madison, WI.
-
-- (2020-- postponed due to COVID-19) Coagulation-Fragmentation equations with multiplicative coagulation and constant
-fragmentation, The 13th AIMS Conference on Dynamical Systems, Differential Equations and
-Applications, Special Section: Nonlinear models in kinetic theory, collective behavior, and fluid
-dynamics, Atlanta, GA.
-
-- (July 2018) Existence of solitary waves in one dimensional peridynamics, SIAM conference on mathematical aspects of material sciences, Portland, OR.
