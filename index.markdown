@@ -4,7 +4,7 @@ profile_picture:
     src: /assets/img/profile.jpg
     alt: Profile
 ---
-I am a Mathematician located in Ho Chi Minh city, Vietnam. 
+I am a mathematician located in Vietnam. 
 
 
 I was a Hans Rademacher Instructor in the Department of Mathematics at the 
