@@ -5,13 +5,6 @@ profile_picture:
     alt: Profile
 ---
 I am a Mathematician located in Ho Chi Minh city, Vietnam. 
-My day job is to lecture and advise students at Fulbright University Vietnam.
-At night, I conduct mathematical research via my
- personal funding, at my home office.
-
-Starting in the Fall of 2025, I will move to [Ho Chi Minh City University of Technology](https://hcmut.edu.vn/en) via the 
-[VNU350 Project](https://vnu350.vnuhcm.edu.vn/en/) (to attract "Young Talents" and "Top Scholars" 
-to go back to Vietnam).
 
 
 I was a Hans Rademacher Instructor in the Department of Mathematics at the 
