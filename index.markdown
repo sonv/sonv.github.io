@@ -14,7 +14,8 @@ Starting in the Fall of 2025, I will move to [Ho Chi Minh City University of Tec
 to go back to Vietnam).
 
 
-I was a Hans Rademacher Instructor in the Department of Mathematics at the 
+I was an assistant professor at Fulbright University Vietnam from 2022-2025. 
+Hans Rademacher Instructor in the Department of Mathematics at the 
 University of Pennsylvania from 2021-2022. 
 Prior to Fall 2021, I was a student of [Gautam Iyer](https://www.math.cmu.edu/~gautam/) and [Bob Pego](https://www.math.cmu.edu/~bobpego/) at Carnegie Mellon University. 
 I am particularly keen on turning real-world phenomena into theorems.
