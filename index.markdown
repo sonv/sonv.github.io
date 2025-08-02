@@ -7,9 +7,8 @@ profile_picture:
 I am a mathematician located in Vietnam. 
 
 
-I was an assistant professor at Fulbright University Vietnam from 2022-2025. 
-I was a
-Hans Rademacher Instructor in the Department of Mathematics at the 
+I was an assistant professor at Fulbright University Vietnam from 2022-2025; 
+ a Hans Rademacher Instructor in the Department of Mathematics at the 
 University of Pennsylvania from 2021-2022. 
 I completed my PhD at Carnegie Mellon University in 2021, under the supervision of [Gautam Iyer](https://www.math.cmu.edu/~gautam/) and [Bob Pego](https://www.math.cmu.edu/~bobpego/). 
 
