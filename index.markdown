@@ -17,6 +17,7 @@ My current research interests include:
 
 - Quantum foundation
 - Diffusion approximations of complex systems 
+- Stochastic processes
 - Partial differential equations 
 
 ## Contact
