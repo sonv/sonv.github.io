@@ -26,7 +26,7 @@ Email: {{ site.author.email}}
 ## Publications and Preprints
 1. (with Y. Mori and C. Sintavanuruk) Error analysis of an acceleration corrected diffusion approximation of Langevin dynamics with background flow. [2025, [Arxiv](https://arxiv.org/abs/2512.00685)]
 
-1. (with D. Maienshein, D. Snoke) Quantum Telegraph Behavior as a Result of Continuous Weak Measurement. [2025, [Arxiv](https://arxiv.org/abs/2508.20837)]
+1. (with D. Maienshein, D. Snoke) Quantum Telegraph Behavior Without Photons (Previous title: Quantum Telegraph Behavior as a Result of Continuous Weak Measurement). [2025, [Arxiv](https://arxiv.org/abs/2508.20837)]
 
 1. (with A. Jordan and D. Snoke) Measurement time of weak measurements on large entangled systems. [2025, [Physical Review A](https://journals.aps.org/pra/abstract/10.1103/PhysRevA.111.032217), [Arxiv](https://arxiv.org/abs/2410.08484)]
 
