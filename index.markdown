@@ -7,13 +7,22 @@ profile_picture:
 I am a mathematician located in Vietnam. 
 
 
-I was an assistant professor at Fulbright University Vietnam from 2022-2025; 
- a Hans Rademacher Instructor in the Department of Mathematics at the 
-University of Pennsylvania from 2021-2022. 
-I completed my PhD at Carnegie Mellon University in 2021, under the supervision of [Gautam Iyer](https://www.math.cmu.edu/~gautam/) and [Bob Pego](https://www.math.cmu.edu/~bobpego/). 
+### Professional positions:
 
+- 2023 - 2025: Assistant Professor, Fulbright University Vietnam
+- 2022 - 2023: Visiting Lecturer, Fulbright University Vietnam
+- 2021 - 2022: Hans Rademacher Instructor, University of Pennsylvania
+
+
+### Education:
+
+- 2015 - 2021: PhD in Mathematics, Carnegie Mellon University (advisors: [Gautam Iyer](https://www.math.cmu.edu/~gautam/) and [Bob Pego](https://www.math.cmu.edu/~bobpego/) )
+- 2013 - 2015: Masters in Mathematics, Miami University 
+- 2009 - 2012: Bachelor in Mathematics, Earlham College
+
+### Research Interests
 I am particularly keen on turning real-world phenomena into theorems.
-My current research interests include: 
+I'm actively working on:
 
 - Quantum foundation
 - Diffusion approximations of complex systems 
