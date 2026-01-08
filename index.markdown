@@ -16,7 +16,8 @@ I am a mathematician located in Vietnam.
 
 ### Education
 
-- 2015 - 2021: PhD in Mathematics, Carnegie Mellon University, advisors: [Gautam Iyer](https://www.math.cmu.edu/~gautam/) and [Bob Pego](https://www.math.cmu.edu/~bobpego/)
+- 2015 - 2021: PhD in Mathematics, Carnegie Mellon University
+  - advisors: [Gautam Iyer](https://www.math.cmu.edu/~gautam/) and [Bob Pego](https://www.math.cmu.edu/~bobpego/)
 - 2013 - 2015: Masters in Mathematics, Miami University 
 - 2009 - 2012: Bachelor in Mathematics, Earlham College
 
