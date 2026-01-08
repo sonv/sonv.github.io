@@ -41,7 +41,7 @@ Email: {{ site.author.email}}
 
 1. (with H.V. Tran) Local mass-conserving solution for a critical Coagulation-Fragmentation equation. [2023, [Journal of Differential Equations](https://www.sciencedirect.com/science/article/pii/S0022039622007252?dgcid=author), [Arxiv](https://arxiv.org/abs/2202.03394)]
 
-1. (with G. Iyer) Bounds on the heat transfer rate via passive advection. [2021, [SIAM Journal of Mathematical Analysis](https://epubs.siam.org/doi/10.1137/21M1394497), 
+1. (with G. Iyer) Bounds on the heat transfer rate via passive advection. [2022, [SIAM Journal of Mathematical Analysis](https://epubs.siam.org/doi/10.1137/21M1394497), 
 [Arxiv](https://arxiv.org/abs/2101.10287)]
 
 1. (with H. Mitake and H.V. Tran) Large time behavior for a Hamilton-Jacobi equation in a critical
