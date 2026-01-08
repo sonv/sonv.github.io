@@ -7,16 +7,16 @@ profile_picture:
 I am a mathematician located in Vietnam. 
 
 
-### Professional positions:
+### Professional positions
 
 - 2023 - 2025: Assistant Professor, Fulbright University Vietnam
 - 2022 - 2023: Visiting Lecturer, Fulbright University Vietnam
 - 2021 - 2022: Hans Rademacher Instructor, University of Pennsylvania
 
 
-### Education:
+### Education
 
-- 2015 - 2021: PhD in Mathematics, Carnegie Mellon University (advisors: [Gautam Iyer](https://www.math.cmu.edu/~gautam/) and [Bob Pego](https://www.math.cmu.edu/~bobpego/))
+- 2015 - 2021: PhD in Mathematics, Carnegie Mellon University, advisors: [Gautam Iyer](https://www.math.cmu.edu/~gautam/) and [Bob Pego](https://www.math.cmu.edu/~bobpego/)
 - 2013 - 2015: Masters in Mathematics, Miami University 
 - 2009 - 2012: Bachelor in Mathematics, Earlham College
 
