@@ -1,0 +1,457 @@
+/* ── Tokens ─────────────────────────────────────────── */
+:root {
+  --bg:          #efecf4;
+  --bg-2:        #e7e3f0;
+  --text:        #1c1626;
+  --muted:       #7b6f90;
+  --accent:      #5c3d8f;
+  --accent-soft: #ede8f7;
+  --border:      #d5cee6;
+  --link:        #5c3d8f;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg:          #100e17;
+    --bg-2:        #191624;
+    --text:        #ede8f8;
+    --muted:       #8070a0;
+    --accent:      #c8a05a;
+    --accent-soft: #1e1a2c;
+    --border:      #2a2440;
+    --link:        #c8a05a;
+  }
+}
+
+[data-theme="dark"] {
+  --bg:          #100e17;
+  --bg-2:        #191624;
+  --text:        #ede8f8;
+  --muted:       #8070a0;
+  --accent:      #c8a05a;
+  --accent-soft: #1e1a2c;
+  --border:      #2a2440;
+  --link:        #c8a05a;
+}
+
+[data-theme="light"] {
+  --bg:          #efecf4;
+  --bg-2:        #e7e3f0;
+  --text:        #1c1626;
+  --muted:       #7b6f90;
+  --accent:      #5c3d8f;
+  --accent-soft: #ede8f7;
+  --border:      #d5cee6;
+  --link:        #5c3d8f;
+}
+
+/* ── Reset ───────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { font-size: 18px; scroll-behavior: smooth; }
+
+/* ── Base ────────────────────────────────────────────── */
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'EB Garamond', Georgia, serif;
+  line-height: 1.75;
+  padding: 0 1.5rem;
+}
+
+a { color: var(--link); }
+
+/* ── Layout ──────────────────────────────────────────── */
+.page {
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 5rem 0 6rem;
+}
+
+/* ── Two-column grid ─────────────────────────────────── */
+.columns {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 0 3.5rem;
+  align-items: start;
+  margin-top: 2.5rem;
+}
+
+.col-profile {
+  position: sticky;
+  top: 3rem;
+  opacity: 0;
+  animation: fadeUp 0.7s ease 0.1s forwards;
+}
+
+.col-research {
+  border-left: 1px solid var(--border);
+  padding-left: 3.5rem;
+  opacity: 0;
+  animation: fadeUp 0.7s ease 0.2s forwards;
+}
+
+/* ── Profile column internals ────────────────────────── */
+.portrait-wrap {
+  margin-bottom: 1.4rem;
+}
+
+.bio-text {
+  font-size: 0.97rem;
+  color: var(--muted);
+  font-style: italic;
+  line-height: 1.65;
+  margin-bottom: 2rem;
+}
+
+.profile-section {
+  margin-top: 1.8rem;
+}
+
+/* ── Header ──────────────────────────────────────────── */
+header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 3.5rem;
+  opacity: 0;
+  animation: fadeUp 0.7s ease forwards;
+}
+
+.name {
+  font-size: 2.4rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  line-height: 1.15;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.name:hover { opacity: 0.75; }
+
+.name-viet {
+  display: block;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.78rem;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin-top: 0.4rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+  flex-shrink: 0;
+}
+
+nav a {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent);
+  padding-bottom: 1px;
+  transition: opacity 0.2s;
+}
+
+nav a:hover { opacity: 0.6; }
+nav a.active { opacity: 0.4; pointer-events: none; }
+
+/* Theme toggle */
+.theme-toggle {
+  margin-left: auto;
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  width: 38px;
+  height: 20px;
+  cursor: pointer;
+  position: relative;
+  transition: border-color 0.3s;
+  flex-shrink: 0;
+}
+
+.theme-toggle::after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--muted);
+  transition: transform 0.3s ease, background 0.3s;
+}
+
+html[data-theme="dark"] .theme-toggle::after {
+  transform: translateX(18px);
+  background: var(--accent);
+}
+
+/* ── Divider ─────────────────────────────────────────── */
+hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 2.5rem 0;
+}
+
+/* ── Teaching page single column ─────────────────────── */
+.page > main {
+  max-width: 640px;
+  margin-top: 2.5rem;
+  opacity: 0;
+  animation: fadeUp 0.7s ease 0.1s forwards;
+}
+.teaching-blurb {
+  font-size: 0.97rem;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.teaching-link {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent);
+  padding-bottom: 1px;
+  transition: opacity 0.2s;
+}
+
+.teaching-link:hover { opacity: 0.6; }
+
+.portrait {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  object-fit: cover;
+  filter: grayscale(15%);
+  display: block;
+}
+
+/* ── Sections (right column) ─────────────────────────── */
+section {
+  margin-top: 2.8rem;
+}
+
+.col-research section:first-child {
+  margin-top: 0;
+}
+
+section:nth-of-type(1) { }
+section:nth-of-type(2) { }
+section:nth-of-type(3) { }
+
+.section-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 1.1rem;
+}
+
+/* ── Generic list ────────────────────────────────────── */
+.item-list { list-style: none; }
+
+.item-list li {
+  padding: 0.55rem 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 1rem;
+}
+
+.item-list li:last-child { border-bottom: none; }
+
+.year {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--muted);
+  margin-right: 0.6rem;
+}
+
+.sub {
+  display: block;
+  font-size: 0.88rem;
+  color: var(--muted);
+  margin-top: 0.15rem;
+}
+
+/* ── Publications ────────────────────────────────────── */
+.pub-list {
+  list-style: none;
+  counter-reset: pub;
+}
+
+.pub-list li {
+  counter-increment: pub;
+  position: relative;
+  padding: 0.75rem 0 0.75rem 2rem;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.97rem;
+}
+
+.pub-list li:last-child { border-bottom: none; }
+
+.pub-list li::before {
+  content: counter(pub) ".";
+  position: absolute;
+  left: 0;
+  top: 0.75rem;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.7rem;
+  color: var(--muted);
+}
+
+.pub-links {
+  display: inline-flex;
+  gap: 0.6rem;
+  margin-top: 0.3rem;
+}
+
+.pub-tag {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  padding: 2px 6px;
+  border-radius: 2px;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.pub-tag:hover {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+/* ── Contact ─────────────────────────────────────────── */
+.contact-line { font-size: 1rem; }
+
+.contact-line a {
+  color: var(--link);
+  text-decoration: none;
+  border-bottom: 1px solid var(--border);
+  transition: border-color 0.2s;
+}
+
+.contact-line a:hover { border-color: var(--accent); }
+
+/* ── Research interest tags ──────────────────────────── */
+.interest-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.interest-tag {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+  background: var(--bg-2);
+  border: 1px solid var(--border);
+  padding: 4px 10px;
+  border-radius: 2px;
+}
+
+/* ── Course cards (teaching page) ───────────────────── */
+.course-list { list-style: none; }
+
+.course-list li {
+  padding: 0.9rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.course-list li:last-child { border-bottom: none; }
+
+.course-title {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.course-meta {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  margin-top: 0.15rem;
+}
+
+.course-desc {
+  font-size: 0.92rem;
+  color: var(--muted);
+  font-style: italic;
+  margin-top: 0.3rem;
+}
+
+.course-links {
+  display: inline-flex;
+  gap: 0.6rem;
+  margin-top: 0.4rem;
+}
+
+.course-code {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+  font-weight: 300;
+}
+
+/* ── Footer ──────────────────────────────────────────── */
+footer {
+  margin-top: 5rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+  font-family: 'DM Mono', monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+}
+
+/* ── Animation ───────────────────────────────────────── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Responsive ──────────────────────────────────────── */
+@media (max-width: 700px) {
+  html { font-size: 16px; }
+  .page { padding: 3rem 0 4rem; }
+
+  .columns {
+    grid-template-columns: 1fr;
+    gap: 2.5rem 0;
+  }
+
+  .col-profile {
+    position: static;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 0 1.4rem;
+    align-items: start;
+  }
+
+  .portrait-wrap { grid-row: span 2; }
+
+  .bio-text { margin-bottom: 0; }
+
+  .profile-section { grid-column: 1 / -1; }
+
+  .col-research {
+    border-left: none;
+    border-top: 1px solid var(--border);
+    padding-left: 0;
+    padding-top: 2.5rem;
+  }
+}

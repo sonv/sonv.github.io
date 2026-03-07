@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Teaching history of Truong-Son Van — courses at Fulbright University Vietnam and the University of Pennsylvania.">
+  <title>Teaching — Truong-Son Van</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    (function() {
+      var saved = localStorage.getItem('theme');
+      var sysDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.setAttribute('data-theme', saved || (sysDark ? 'dark' : 'light'));
+    })();
+  </script>
+</head>
+<body>
+  <div class="page">
+
+    <header>
+      <a class="name" href="index.html">
+        Truong-Son Van
+        <span class="name-viet">Văn Phụng Trường Sơn</span>
+      </a>
+      <nav aria-label="Site navigation">
+        <a href="teaching.html" class="active" aria-current="page">Teaching</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark theme"></button>
+      </nav>
+    </header>
+
+    <main>
+
+      <section aria-labelledby="label-fulbright">
+        <h2 class="section-label" id="label-fulbright">Fulbright University Vietnam</h2>
+        <ul class="course-list">
+          <li>
+            <div class="course-meta">Spring 2025</div>
+            <div class="course-title">MATH 104: Multivariable Calculus</div>
+            <div class="course-title">MATH 310: Topology and Measure Theory</div>
+          </li>
+          <li>
+            <div class="course-meta">Fall 2024</div>
+            <div class="course-title">MATH 101: Calculus</div>
+            <div class="course-title">MATH 102: Ideas of Mathematics</div>
+          </li>
+          <li>
+            <div class="course-meta">Spring 2024</div>
+            <div class="course-title">MATH 104: Multivariable Calculus</div>
+            <div class="course-title">MATH 310: Mathematical Statistics</div>
+          </li>
+          <li>
+            <div class="course-meta">Fall 2023</div>
+            <div class="course-title">MATH 101: Calculus</div>
+            <div class="course-title">MATH 102: Ideas of Mathematics</div>
+          </li>
+          <li>
+            <div class="course-meta">Spring 2023</div>
+            <div class="course-title">MATH 104: Multivariable Calculus</div>
+            <div class="course-title">CORE 103: Quantitative Reasoning</div>
+          </li>
+          <li>
+            <div class="course-meta">Fall 2022</div>
+            <div class="course-title">MATH 105: Introduction to Data Analysis</div>
+            <div class="course-title">MATH 102: Ideas of Mathematics</div>
+          </li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="label-upenn">
+        <h2 class="section-label" id="label-upenn">University of Pennsylvania</h2>
+        <ul class="course-list">
+          <li>
+            <div class="course-meta">Spring 2022</div>
+            <div class="course-title">MATH 210: Math in the Age of Information</div>
+            <div class="course-title">MATH 361: Advanced Calculus 2</div>
+          </li>
+          <li>
+            <div class="course-meta">Fall 2021</div>
+            <div class="course-title">MATH 170: Ideas in Mathematics</div>
+          </li>
+        </ul>
+      </section>
+
+    </main>
+
+    <footer>
+      Truong-Son Van &nbsp;·&nbsp; Ho Chi Minh City, Vietnam &nbsp;·&nbsp; <a href="index.html">Back to main page</a>
+    </footer>
+
+  </div>
+
+  <script>
+    var btn = document.getElementById('themeToggle');
+    btn.addEventListener('click', function() {
+      var next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+    });
+  </script>
+</body>
+</html>

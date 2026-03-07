@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Truong-Son Van — Mathematician in Ho Chi Minh City. Research in quantum foundations, stochastic processes, and PDEs.">
+  <title>Truong-Son Van — Mathematician</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    (function() {
+      var saved = localStorage.getItem('theme');
+      var sysDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.setAttribute('data-theme', saved || (sysDark ? 'dark' : 'light'));
+    })();
+  </script>
+</head>
+<body>
+  <div class="page">
+
+    <header>
+      <h1 class="name">
+        Truong-Son Van
+        <span class="name-viet">Văn Phụng Trường Sơn</span>
+      </h1>
+      <nav aria-label="Site navigation">
+        <a href="teaching.html">Teaching</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark theme"></button>
+      </nav>
+    </header>
+
+    <div class="columns">
+
+      <!-- Left: Profile -->
+      <aside class="col-profile" aria-label="Profile">
+
+        <div class="portrait-wrap">
+          <img class="portrait" src="https://www.tsvan.xyz/assets/img/profile.jpg"
+               alt="Portrait of Truong-Son Van" width="400" height="500">
+        </div>
+
+        <p class="bio-text">A mathematician located in Vietnam, interested in turning real-world phenomena into theorems.</p>
+
+        <div class="profile-section">
+          <h2 class="section-label">Positions</h2>
+          <ul class="item-list">
+            <li>
+              <span class="year">2023–2025</span> Assistant Professor
+              <span class="sub">Fulbright University Vietnam</span>
+            </li>
+            <li>
+              <span class="year">2022–2023</span> Visiting Lecturer
+              <span class="sub">Fulbright University Vietnam</span>
+            </li>
+            <li>
+              <span class="year">2021–2022</span> Hans Rademacher Instructor
+              <span class="sub">University of Pennsylvania</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="profile-section">
+          <h2 class="section-label">Education</h2>
+          <ul class="item-list">
+            <li>
+              <span class="year">2015–2021</span> PhD in Mathematics
+              <span class="sub">Carnegie Mellon University<br>advised by <a href="https://www.math.cmu.edu/~gautam/" rel="noopener noreferrer">Gautam Iyer</a> &amp; <a href="https://www.math.cmu.edu/~bobpego/" rel="noopener noreferrer">Bob Pego</a></span>
+            </li>
+            <li>
+              <span class="year">2013–2015</span> Masters in Mathematics
+              <span class="sub">Miami University</span>
+            </li>
+            <li>
+              <span class="year">2009–2012</span> Bachelor in Mathematics
+              <span class="sub">Earlham College</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="profile-section">
+          <h2 class="section-label">Contact</h2>
+          <p class="contact-line">
+            <a href="mailto:truongson.vanp@gmail.com">truongson.vanp@gmail.com</a>
+          </p>
+        </div>
+
+      </aside>
+
+      <!-- Right: Research -->
+      <main class="col-research">
+
+        <section aria-labelledby="label-research">
+          <h2 class="section-label" id="label-research">Research Interests</h2>
+          <div class="interest-grid">
+            <span class="interest-tag">Quantum Foundations</span>
+            <span class="interest-tag">Diffusion Approximations</span>
+            <span class="interest-tag">Stochastic Processes</span>
+            <span class="interest-tag">Partial Differential Equations</span>
+          </div>
+        </section>
+
+        <section aria-labelledby="label-pubs">
+          <h2 class="section-label" id="label-pubs">Publications &amp; Preprints</h2>
+          <ol class="pub-list">
+            <li>
+              (with Y. Mori and C. Sintavanuruk) Error analysis of an acceleration corrected diffusion approximation of Langevin dynamics with background flow. <em>2025</em>
+              <div class="pub-links">
+                <a class="pub-tag" href="https://arxiv.org/abs/2512.00685" rel="noopener noreferrer">arXiv</a>
+              </div>
+            </li>
+            <li>
+              (with D. Maienshein, D. Snoke) Quantum Telegraph Behavior Without Photons. <em>2025</em>
+              <div class="pub-links">
+                <a class="pub-tag" href="https://arxiv.org/abs/2508.20837" rel="noopener noreferrer">arXiv</a>
+              </div>
+            </li>
+            <li>
+              (with A. Jordan and D. Snoke) Measurement time of weak measurements on large entangled systems. <em>2025</em>
+              <div class="pub-links">
+                <a class="pub-tag" href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.111.032217" rel="noopener noreferrer">Physical Review A</a>
+                <a class="pub-tag" href="https://arxiv.org/abs/2410.08484" rel="noopener noreferrer">arXiv</a>
+              </div>
+            </li>
+            <li>
+              (with H.V. Tran) Local mass-conserving solution for a critical Coagulation-Fragmentation equation. <em>2023</em>
+              <div class="pub-links">
+                <a class="pub-tag" href="https://www.sciencedirect.com/science/article/pii/S0022039622007252" rel="noopener noreferrer">J. Differential Equations</a>
+                <a class="pub-tag" href="https://arxiv.org/abs/2202.03394" rel="noopener noreferrer">arXiv</a>
+              </div>
+            </li>
+            <li>
+              (with G. Iyer) Bounds on the heat transfer rate via passive advection. <em>2022</em>
+              <div class="pub-links">
+                <a class="pub-tag" href="https://epubs.siam.org/doi/10.1137/21M1394497" rel="noopener noreferrer">SIAM J. Math. Analysis</a>
+                <a class="pub-tag" href="https://arxiv.org/abs/2101.10287" rel="noopener noreferrer">arXiv</a>
+              </div>
+            </li>
+            <li>
+              (with H. Mitake and H.V. Tran) Large time behavior for a Hamilton-Jacobi equation in a critical Coagulation-Fragmentation model. <em>2021</em>
+              <div class="pub-links">
+                <a class="pub-tag" href="https://dx.doi.org/10.4310/CMS.2021.v19.n2.a8" rel="noopener noreferrer">Comm. Math. Sciences</a>
+                <a class="pub-tag" href="https://arxiv.org/abs/2004.13619" rel="noopener noreferrer">arXiv</a>
+              </div>
+            </li>
+            <li>
+              (with H.V. Tran) Coagulation-Fragmentation equations with multiplicative coagulation kernel and constant fragmentation kernel. <em>2021</em>
+              <div class="pub-links">
+                <a class="pub-tag" href="https://doi.org/10.1002/cpa.21979" rel="noopener noreferrer">Comm. Pure &amp; Applied Math</a>
+                <a class="pub-tag" href="https://arxiv.org/abs/1910.13424" rel="noopener noreferrer">arXiv</a>
+              </div>
+            </li>
+            <li>
+              (with R.L. Pego) Existence of solitary waves in one dimensional peridynamics. <em>2018</em>
+              <div class="pub-links">
+                <a class="pub-tag" href="https://rdcu.be/bargo" rel="noopener noreferrer">J. Elasticity</a>
+                <a class="pub-tag" href="https://arxiv.org/abs/1802.00516" rel="noopener noreferrer">arXiv</a>
+              </div>
+            </li>
+            <li>
+              Investigations of the dynamics of models of heat transfer and clustering. <em>PhD Thesis, 2021</em>
+              <div class="pub-links">
+                <a class="pub-tag" href="/pdfs/Van-Thesis.pdf">PDF</a>
+              </div>
+            </li>
+          </ol>
+        </section>
+
+      </main>
+
+    </div>
+
+    <footer>
+      Truong-Son Van &nbsp;·&nbsp; Ho Chi Minh City, Vietnam
+    </footer>
+
+  </div>
+
+  <script>
+    var btn = document.getElementById('themeToggle');
+    btn.addEventListener('click', function() {
+      var next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+    });
+  </script>
+</body>
+</html>

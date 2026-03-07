@@ -1,1 +1,0 @@
-# sonv-jekyll-minima
