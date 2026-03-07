@@ -1,25 +1,55 @@
----
-permalink: /404.html
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <title>404 — Truong-Son Van</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    (function() {
+      var saved = localStorage.getItem('theme');
+      var sysDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.setAttribute('data-theme', saved || (sysDark ? 'dark' : 'light'));
+    })();
+  </script>
+</head>
+<body>
+  <div class="page">
 
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
+    <header>
+      <a class="name" href="index.html">
+        Truong-Son Van
+        <span class="name-viet">Văn Phụng Trường Sơn</span>
+      </a>
+      <nav aria-label="Site navigation">
+        <a href="teaching.html">Teaching</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark theme"></button>
+      </nav>
+    </header>
 
-<div class="container">
-  <h1>404</h1>
+    <div class="not-found">
+      <p class="not-found-code">404</p>
+      <h1 class="not-found-title">Page not found.</h1>
+      <p class="not-found-desc">The page you're looking for doesn't exist or has been moved.</p>
+      <a class="not-found-link" href="index.html">← Back to home</a>
+    </div>
 
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
-</div>
+    <footer>
+      Truong-Son Van &nbsp;·&nbsp; Ho Chi Minh City, Vietnam
+    </footer>
+
+  </div>
+
+  <script>
+    var btn = document.getElementById('themeToggle');
+    btn.addEventListener('click', function() {
+      var next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+    });
+  </script>
+</body>
+</html>

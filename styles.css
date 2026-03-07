@@ -163,7 +163,6 @@ nav a.active { opacity: 0.4; pointer-events: none; }
 
 /* Theme toggle */
 .theme-toggle {
-  margin-left: auto;
   background: none;
   border: 1px solid var(--border);
   border-radius: 20px;
@@ -173,6 +172,24 @@ nav a.active { opacity: 0.4; pointer-events: none; }
   position: relative;
   transition: border-color 0.3s;
   flex-shrink: 0;
+  /* Enlarge touch area without changing visual size */
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Invisible touch area overlay for accessibility */
+.theme-toggle::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 44px;
+  height: 44px;
+}
+
+.theme-toggle-dot {
+  /* dot is handled via ::after below */
 }
 
 .theme-toggle::after {
@@ -185,6 +202,7 @@ nav a.active { opacity: 0.4; pointer-events: none; }
   border-radius: 50%;
   background: var(--muted);
   transition: transform 0.3s ease, background 0.3s;
+  z-index: 1;
 }
 
 html[data-theme="dark"] .theme-toggle::after {
@@ -375,15 +393,15 @@ section:nth-of-type(3) { }
 
 .course-title {
   font-size: 1rem;
-  font-weight: 500;
 }
 
 .course-meta {
   font-family: 'DM Mono', monospace;
   font-size: 0.7rem;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   color: var(--muted);
-  margin-top: 0.15rem;
+  margin-bottom: 0.35rem;
 }
 
 .course-desc {
@@ -426,32 +444,58 @@ footer {
 
 /* ── Responsive ──────────────────────────────────────── */
 @media (max-width: 700px) {
-  html { font-size: 16px; }
-  .page { padding: 3rem 0 4rem; }
+  html { font-size: 15px; }
 
+  body { padding: 0 1rem; }
+
+  .page { padding: 2rem 0 3.5rem; }
+
+  /* Header: stack name above nav on small screens */
+  header {
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-bottom: 2rem;
+    align-items: flex-start;
+  }
+
+  .name { font-size: 1.8rem; }
+
+  nav { margin-left: auto; }
+
+  /* Columns: single column */
   .columns {
     grid-template-columns: 1fr;
-    gap: 2.5rem 0;
+    gap: 2rem 0;
+    margin-top: 1.5rem;
   }
 
   .col-profile {
     position: static;
     display: grid;
-    grid-template-columns: 100px 1fr;
-    gap: 0 1.4rem;
+    grid-template-columns: 90px 1fr;
+    gap: 0 1.2rem;
     align-items: start;
   }
 
   .portrait-wrap { grid-row: span 2; }
 
-  .bio-text { margin-bottom: 0; }
+  .bio-text { margin-bottom: 0; font-size: 0.9rem; }
 
-  .profile-section { grid-column: 1 / -1; }
+  .profile-section { grid-column: 1 / -1; margin-top: 1.4rem; }
 
   .col-research {
     border-left: none;
     border-top: 1px solid var(--border);
     padding-left: 0;
-    padding-top: 2.5rem;
+    padding-top: 2rem;
   }
+
+  /* Teaching page main */
+  .page > main { margin-top: 1.5rem; }
+
+  /* Tighten section spacing */
+  section { margin-top: 2rem; }
+
+  /* Publications: reduce indent */
+  .pub-list li { padding-left: 1.5rem; }
 }
