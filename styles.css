@@ -1,48 +1,48 @@
 /* ── Tokens ─────────────────────────────────────────── */
 :root {
-  --bg:          #efecf4;
-  --bg-2:        #e7e3f0;
-  --text:        #1c1626;
-  --muted:       #7b6f90;
-  --accent:      #5c3d8f;
-  --accent-soft: #ede8f7;
-  --border:      #d5cee6;
-  --link:        #5c3d8f;
+  --bg:          #f5f7f7;   /* cool off-white with teal hint */
+  --bg-2:        #e8eeee;   /* deeper teal-grey */
+  --text:        #0e1a1a;   /* deep teal-black */
+  --muted:       #4e6e6e;   /* muted teal */
+  --accent:      #a81e2d;   /* rich crimson */
+  --accent-soft: #f5e8ea;   /* pale crimson tint */
+  --border:      #c2d4d4;   /* teal-grey border */
+  --link:        #a81e2d;
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg:          #100e17;
-    --bg-2:        #191624;
-    --text:        #ede8f8;
-    --muted:       #8070a0;
-    --accent:      #c8a05a;
-    --accent-soft: #1e1a2c;
-    --border:      #2a2440;
-    --link:        #c8a05a;
+    --bg:          #070d18;
+    --bg-2:        #0e1828;
+    --text:        #edf2fa;
+    --muted:       #8fa8c8;
+    --accent:      #78b4e8;
+    --accent-soft: #0e1828;
+    --border:      #1e3050;
+    --link:        #78b4e8;
   }
 }
 
 [data-theme="dark"] {
-  --bg:          #100e17;
-  --bg-2:        #191624;
-  --text:        #ede8f8;
-  --muted:       #8070a0;
-  --accent:      #c8a05a;
-  --accent-soft: #1e1a2c;
-  --border:      #2a2440;
-  --link:        #c8a05a;
+  --bg:          #070d18;
+  --bg-2:        #0e1828;
+  --text:        #edf2fa;
+  --muted:       #8fa8c8;
+  --accent:      #78b4e8;
+  --accent-soft: #0e1828;
+  --border:      #1e3050;
+  --link:        #78b4e8;
 }
 
 [data-theme="light"] {
-  --bg:          #efecf4;
-  --bg-2:        #e7e3f0;
-  --text:        #1c1626;
-  --muted:       #7b6f90;
-  --accent:      #5c3d8f;
-  --accent-soft: #ede8f7;
-  --border:      #d5cee6;
-  --link:        #5c3d8f;
+  --bg:          #f5f7f7;
+  --bg-2:        #e8eeee;
+  --text:        #0e1a1a;
+  --muted:       #4e6e6e;
+  --accent:      #a81e2d;
+  --accent-soft: #f5e8ea;
+  --border:      #c2d4d4;
+  --link:        #a81e2d;
 }
 
 /* ── Reset ───────────────────────────────────────────── */
