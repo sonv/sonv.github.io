@@ -86,7 +86,7 @@
 }
 
 html {
-  font-size: 18px;
+  font-size: 20px;
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
 }
@@ -124,7 +124,7 @@ a {
 .page {
   max-width: 1040px;
   margin: 0 auto;
-  padding: 5rem 0 7rem;
+  padding: 2rem 0 7rem;
 }
 
 /* ── Two-column grid ─────────────────────────────────── */
@@ -654,7 +654,7 @@ footer {
    Responsive — ≤ 700px
    ══════════════════════════════════════════════════════ */
 @media (max-width: 700px) {
-  html { font-size: 15px; }
+  html { font-size: 17px; }
 
   body { padding: 0 1rem; }
 
