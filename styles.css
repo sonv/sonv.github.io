@@ -721,3 +721,36 @@ footer {
     gap: 0.3rem;
   }
 }
+
+/* ── Video thumbnail ─────────────────────────────────── */
+.video-thumb {
+  display: block;
+  position: relative;
+  margin-top: 1rem;
+  max-width: 640px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.video-thumb img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: opacity 0.2s;
+}
+
+.video-thumb:hover img { opacity: 0.85; }
+
+.play-btn {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+  pointer-events: none;
+}

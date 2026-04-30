@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Useful tools and resources by Truong-Son Van.">
+  <title>Truong-Son Van - Useful</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    (function() {
+      var saved = localStorage.getItem('theme');
+      var sysDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.setAttribute('data-theme', saved || (sysDark ? 'dark' : 'light'));
+    })();
+  </script>
+</head>
+<body>
+  <div class="page">
+
+    <header>
+      <a class="name" href="index.html">
+        Truong-Son Van
+        <span class="name-viet">Văn Phụng Trường Sơn</span>
+      </a>
+      <nav aria-label="Site navigation">
+        <a href="teaching.html">Teaching</a>
+        <a href="useful.html" class="active" aria-current="page">Useful</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark theme"></button>
+      </nav>
+    </header>
+
+    <main>
+
+      <section aria-labelledby="label-plugins">
+        <h2 class="section-label" id="label-plugins">Neovim Plugins</h2>
+        <ul class="course-list">
+          <li>
+            <div class="course-title">
+              <a href="https://github.com/sonv/latex-preview-nvim" rel="noopener noreferrer">latex-preview-nvim</a>
+            </div>
+            <div class="course-meta">A Neovim plugin for live LaTeX preview.</div>
+            <a class="video-thumb" href="https://www.youtube.com/watch?v=Naqs8XSB0ko"
+               target="_blank" rel="noopener noreferrer" aria-label="Watch latex-preview-nvim demo on YouTube">
+              <img src="https://img.youtube.com/vi/Naqs8XSB0ko/maxresdefault.jpg"
+                   alt="latex-preview-nvim demo video thumbnail">
+              <span class="play-btn" aria-hidden="true">&#9654;</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+    </main>
+
+    <footer>
+      Truong-Son Van &nbsp;·&nbsp; Ho Chi Minh City, Vietnam &nbsp;·&nbsp; <a href="index.html">Back to main page</a>
+    </footer>
+
+  </div>
+
+  <script>
+    var btn = document.getElementById('themeToggle');
+    btn.addEventListener('click', function() {
+      var next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+    });
+  </script>
+</body>
+</html>
