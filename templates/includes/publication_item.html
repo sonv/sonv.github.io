@@ -7,7 +7,13 @@
       {% if name_parts | length > 1 %}{{ name_parts[1] | trim }} {{ name_parts[0] | trim }}{% else %}{{ author }}{% endif %}{% if not loop.last %}, {% endif %}
     {% endfor %}.
   {% endif %}
-  {{ p.title | replace(from="{", to="") | replace(from="}", to="") }}. <em>{% if p.type_label is defined %}{{ p.type_label }}, {% endif %}{{ p.year }}</em>
+  {% if p.date is defined %}
+    {% set date_parts = p.date | split(pat="-") %}
+    {% set display_year = date_parts[0] %}
+  {% else %}
+    {% set display_year = p.year %}
+  {% endif %}
+  {{ p.title | replace(from="{", to="") | replace(from="}", to="") }}. <em>{% if p.type_label is defined %}{{ p.type_label }}, {% endif %}{{ display_year }}</em>
   <div class="pub-links">
     {% if p.arxiv is defined %}
     <a class="pub-tag" href="https://arxiv.org/abs/{{ p.arxiv }}" rel="noopener noreferrer">arXiv</a>
