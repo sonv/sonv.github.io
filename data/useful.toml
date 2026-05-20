@@ -1,0 +1,8 @@
+[[sections]]
+id = "plugins"
+label = "Neovim Plugins"
+
+[[sections.items]]
+title = "latex-preview-nvim"
+url = "https://github.com/sonv/latex-preview-nvim"
+description = "A Neovim plugin for live LaTeX preview."

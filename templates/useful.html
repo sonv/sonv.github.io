@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% set useful = load_data(path="data/useful.toml") %}
+<main>
+  {% for section in useful.sections %}
+  <section aria-labelledby="label-{{ section.id }}">
+    <h2 class="section-label" id="label-{{ section.id }}">{{ section.label }}</h2>
+    <ul class="course-list">
+      {% for item in section.items %}
+      <li>
+        <div class="course-title">
+          <a href="{{ item.url }}" rel="noopener noreferrer">{{ item.title }}</a>
+        </div>
+        <div class="course-meta">{{ item.description }}</div>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endfor %}
+</main>
+{% endblock content %}

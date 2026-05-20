@@ -1,0 +1,62 @@
+[[institutions]]
+id = "fulbright"
+name = "Fulbright University Vietnam"
+
+[[institutions.terms]]
+term = "Spring 2025"
+courses = [
+  "MATH 104: Multivariable Calculus",
+  "MATH 310: Topology and Measure Theory",
+]
+
+[[institutions.terms]]
+term = "Fall 2024"
+courses = [
+  "MATH 101: Calculus",
+  "MATH 102: Ideas of Mathematics",
+]
+
+[[institutions.terms]]
+term = "Spring 2024"
+courses = [
+  "MATH 104: Multivariable Calculus",
+  "MATH 310: Mathematical Statistics",
+]
+
+[[institutions.terms]]
+term = "Fall 2023"
+courses = [
+  "MATH 101: Calculus",
+  "MATH 102: Ideas of Mathematics",
+]
+
+[[institutions.terms]]
+term = "Spring 2023"
+courses = [
+  "MATH 104: Multivariable Calculus",
+  "CORE 103: Quantitative Reasoning",
+]
+
+[[institutions.terms]]
+term = "Fall 2022"
+courses = [
+  "MATH 105: Introduction to Data Analysis",
+  "MATH 102: Ideas of Mathematics",
+]
+
+[[institutions]]
+id = "upenn"
+name = "University of Pennsylvania"
+
+[[institutions.terms]]
+term = "Spring 2022"
+courses = [
+  "MATH 210: Math in the Age of Information",
+  "MATH 361: Advanced Calculus 2",
+]
+
+[[institutions.terms]]
+term = "Fall 2021"
+courses = [
+  "MATH 170: Ideas in Mathematics",
+]

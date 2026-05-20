@@ -1,0 +1,19 @@
+{% set here = current_path | default(value="") %}
+<header>
+  {% if here == "/" %}
+    <h1 class="name">
+      {{ profile.name }}
+      <span class="name-viet">{{ profile.name_viet }}</span>
+    </h1>
+  {% else %}
+    <a class="name" href="{{ get_url(path='/') }}">
+      {{ profile.name }}
+      <span class="name-viet">{{ profile.name_viet }}</span>
+    </a>
+  {% endif %}
+  <nav aria-label="Site navigation">
+    <a href="{{ get_url(path='@/teaching.md') }}"{% if here == "/teaching/" %} class="active" aria-current="page"{% endif %}>Teaching</a>
+    <a href="{{ get_url(path='@/useful.md') }}"{% if here == "/useful/" %} class="active" aria-current="page"{% endif %}>Useful</a>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark theme"></button>
+  </nav>
+</header>

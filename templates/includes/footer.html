@@ -1,0 +1,5 @@
+{% set here = current_path | default(value="") %}
+<footer>
+  {{ profile.name }} &nbsp;·&nbsp; {{ profile.location }}
+  {% if here != "/" and here != "" %}&nbsp;·&nbsp; <a href="{{ get_url(path='/') }}">Back to main page</a>{% endif %}
+</footer>

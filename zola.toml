@@ -1,0 +1,11 @@
+base_url = "https://www.tsvan.xyz"
+title = "Truong-Son Van"
+description = "Truong-Son Van - Mathematician in Ho Chi Minh City. Research in quantum foundations, stochastic processes, and PDEs."
+
+compile_sass = false
+build_search_index = false
+generate_feeds = false
+minify_html = false
+
+[extra]
+mathjax = false

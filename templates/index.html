@@ -1,0 +1,131 @@
+{% extends "base.html" %}
+
+{% block title %}{{ profile.name }}{% endblock title %}
+
+{% block content %}
+{% set profile = load_data(path="data/profile.toml") %}
+{% set pubs = load_data(path="data/publications.bib", format="bibtex") %}
+<div class="columns">
+
+  <aside class="col-profile" aria-label="Profile">
+    <div class="portrait-wrap">
+      <img class="portrait" src="{{ get_url(path=profile.portrait) }}"
+           alt="Portrait of {{ profile.name }}" width="400" height="500">
+    </div>
+
+    {% if profile.current_position is defined %}
+    <div class="profile-section">
+      <ul class="item-list">
+        <li>
+          {{ profile.current_position.title }}
+          <span class="sub">{{ profile.current_position.institution }}</span>
+        </li>
+      </ul>
+    </div>
+    {% endif %}
+
+    <div class="profile-section">
+      <h2 class="section-label">Contact</h2>
+      <p class="contact-line">
+        <a href="mailto:{{ profile.email }}">{{ profile.email }}</a>
+      </p>
+    </div>
+
+    <div class="profile-section">
+      <h2 class="section-label">Past positions</h2>
+      <ul class="item-list">
+        {% for position in profile.past_positions %}
+        <li>
+          <span class="year">{{ position.years }}</span> {{ position.title }}
+          <span class="sub">{{ position.institution }}</span>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div class="profile-section">
+      <h2 class="section-label">Education</h2>
+      <ul class="item-list">
+        {% for item in profile.education %}
+        <li>
+          <span class="year">{{ item.years }}</span> {{ item.degree }}
+          <span class="sub">
+            {{ item.institution }}
+            {% if item.advisors is defined %}
+              <br>advised by
+              {% for advisor in item.advisors %}
+                {% if loop.index0 > 0 %} &amp; {% endif %}
+                <a href="{{ advisor.url }}" rel="noopener noreferrer">{{ advisor.name }}</a>
+              {% endfor %}
+            {% endif %}
+          </span>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </aside>
+
+  <main class="col-research">
+    <section aria-labelledby="label-research">
+      <h2 class="section-label" id="label-research">Research Interests</h2>
+      <div class="interest-grid">
+        {% for interest in profile.interests %}
+        <span class="interest-tag">{{ interest }}</span>
+        {% endfor %}
+      </div>
+    </section>
+
+    {% set sorted_pubs = pubs.bibliographies | sort(attribute="tags.year") | reverse %}
+
+    <section aria-labelledby="label-preprints">
+      <h2 class="section-label" id="label-preprints">Preprints</h2>
+      <ol class="pub-list pub-list-forward">
+        {% for pub in sorted_pubs %}
+        {% set p = pub.tags %}
+        {% set is_preprint = pub.entry_type == "misc" or (p.journal is defined and p.journal == "In preparation") %}
+        {% if is_preprint %}
+        {% include "includes/publication_item.html" %}
+        {% endif %}
+        {% endfor %}
+      </ol>
+    </section>
+
+    <section aria-labelledby="label-pubs">
+      <h2 class="section-label" id="label-pubs">Publications</h2>
+      {% set publications = sorted_pubs | filter(attribute="entry_type", value="article") %}
+      <ol class="pub-list" style="--pub-count: {{ publications | length + 1 }};">
+        {% for pub in sorted_pubs %}
+        {% set p = pub.tags %}
+        {% set is_preprint = pub.entry_type == "misc" or (p.journal is defined and p.journal == "In preparation") %}
+        {% if pub.entry_type != "phdthesis" and not is_preprint %}
+        {% include "includes/publication_item.html" %}
+        {% endif %}
+        {% endfor %}
+      </ol>
+    </section>
+
+    <section aria-labelledby="label-thesis">
+      <h2 class="section-label" id="label-thesis">Thesis</h2>
+      <ul class="item-list">
+        {% for pub in sorted_pubs %}
+        {% if pub.entry_type == "phdthesis" %}
+        {% set p = pub.tags %}
+        <li>
+          {{ p.title | replace(from="{", to="") | replace(from="}", to="") }}. <em>{% if p.type_label is defined %}{{ p.type_label }}, {% endif %}{{ p.year }}</em>
+          <div class="pub-links">
+            {% if p.pdf is defined %}
+            <a class="pub-tag" href="{{ p.pdf }}">PDF</a>
+            {% endif %}
+            {% if p.url is defined %}
+            <a class="pub-tag" href="{{ p.url }}" rel="noopener noreferrer">Link</a>
+            {% endif %}
+          </div>
+        </li>
+        {% endif %}
+        {% endfor %}
+      </ul>
+    </section>
+  </main>
+
+</div>
+{% endblock content %}

@@ -1,0 +1,49 @@
+name = "Truong-Son Van"
+name_viet = "Văn Phụng Trường Sơn"
+location = "Ho Chi Minh City, Vietnam"
+email = "truongson.vanp@gmail.com"
+portrait = "assets/img/profile.jpg"
+description = "Truong-Son Van - Mathematician in Ho Chi Minh City. Research in quantum foundations, stochastic processes, and PDEs."
+interests = [
+  "Stochastic Processes",
+  "Partial Differential Equations",
+  "Quantum Foundations",
+]
+
+[current_position]
+title = "Lecturer"
+institution = "Ho Chi Minh Univeristy of Technology, Vietnam National University Ho Chi Minh"
+
+[[past_positions]]
+years = "2023–2025"
+title = "Assistant Professor"
+institution = "Fulbright University Vietnam"
+
+[[past_positions]]
+years = "2022–2023"
+title = "Visiting Lecturer"
+institution = "Fulbright University Vietnam"
+
+[[past_positions]]
+years = "2021–2022"
+title = "Hans Rademacher Instructor"
+institution = "University of Pennsylvania"
+
+[[education]]
+years = "2015–2021"
+degree = "PhD in Mathematics"
+institution = "Carnegie Mellon University"
+advisors = [
+  { name = "Gautam Iyer", url = "https://www.math.cmu.edu/~gautam/" },
+  { name = "Bob Pego", url = "https://www.math.cmu.edu/~bobpego/" },
+]
+
+[[education]]
+years = "2013–2015"
+degree = "Masters in Mathematics"
+institution = "Miami University"
+
+[[education]]
+years = "2009–2012"
+degree = "Bachelor in Mathematics"
+institution = "Earlham College"

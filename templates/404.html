@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}404 - {{ profile.name }}{% endblock title %}
+
+{% block content %}
+<div class="not-found">
+  <p class="not-found-code">404</p>
+  <h1 class="not-found-title">Page not found.</h1>
+  <p class="not-found-desc">The page you're looking for doesn't exist or has been moved.</p>
+  <a class="not-found-link" href="{{ get_url(path='/') }}">← Back to home</a>
+</div>
+{% endblock content %}

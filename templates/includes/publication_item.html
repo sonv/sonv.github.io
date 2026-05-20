@@ -1,0 +1,28 @@
+<li>
+  {% if p.author is defined %}
+    {% set authors = p.author | split(pat=" and ") %}
+    {% for raw_author in authors %}
+      {% set author = raw_author | trim | replace(from="\\u a", to="ă") | replace(from="{", to="") | replace(from="}", to="") %}
+      {% set name_parts = author | split(pat=",") %}
+      {% if name_parts | length > 1 %}{{ name_parts[1] | trim }} {{ name_parts[0] | trim }}{% else %}{{ author }}{% endif %}{% if not loop.last %}, {% endif %}
+    {% endfor %}.
+  {% endif %}
+  {{ p.title | replace(from="{", to="") | replace(from="}", to="") }}. <em>{% if p.type_label is defined %}{{ p.type_label }}, {% endif %}{{ p.year }}</em>
+  <div class="pub-links">
+    {% if p.arxiv is defined %}
+    <a class="pub-tag" href="https://arxiv.org/abs/{{ p.arxiv }}" rel="noopener noreferrer">arXiv</a>
+    {% endif %}
+    {% if p.eprint is defined %}
+    <a class="pub-tag" href="https://arxiv.org/abs/{{ p.eprint }}" rel="noopener noreferrer">arXiv</a>
+    {% endif %}
+    {% if p.doi is defined %}
+    <a class="pub-tag" href="https://doi.org/{{ p.doi }}" rel="noopener noreferrer">{% if p.journal is defined %}{{ p.journal }}{% else %}DOI{% endif %}</a>
+    {% endif %}
+    {% if p.pdf is defined %}
+    <a class="pub-tag" href="{{ p.pdf }}">PDF</a>
+    {% endif %}
+    {% if p.url is defined %}
+    <a class="pub-tag" href="{{ p.url }}" rel="noopener noreferrer">Link</a>
+    {% endif %}
+  </div>
+</li>

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% set teaching = load_data(path="data/teaching.toml") %}
+<main>
+  {% for institution in teaching.institutions %}
+  <section aria-labelledby="label-{{ institution.id }}">
+    <h2 class="section-label" id="label-{{ institution.id }}">{{ institution.name }}</h2>
+    <ul class="course-list">
+      {% for term in institution.terms %}
+      <li>
+        <div class="course-meta">{{ term.term }}</div>
+        {% for course in term.courses %}
+        <div class="course-title">{{ course }}</div>
+        {% endfor %}
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endfor %}
+</main>
+{% endblock content %}

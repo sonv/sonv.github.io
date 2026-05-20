@@ -1,0 +1,61 @@
+{% set profile = load_data(path="data/profile.toml") %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{% if page is defined and page.description %}{{ page.description }}{% elif section is defined and section.description %}{{ section.description }}{% else %}{{ profile.description }}{% endif %}">
+  <title>{% block title %}{% if page is defined and page.title %}{{ profile.name }} - {{ page.title }}{% else %}{{ profile.name }}{% endif %}{% endblock title %}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ get_url(path='styles.css') }}">
+  <script>
+    (function() {
+      var saved = localStorage.getItem('theme');
+      var sysDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.setAttribute('data-theme', saved || (sysDark ? 'dark' : 'light'));
+    })();
+  </script>
+  {% if page is defined and page.extra.mathjax is defined and page.extra.mathjax %}
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+  {% elif section is defined and section.extra.mathjax is defined and section.extra.mathjax %}
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+  {% endif %}
+</head>
+<body>
+  <div class="page">
+    {% include "includes/header.html" %}
+
+    {% block content %}{% endblock content %}
+
+    {% include "includes/footer.html" %}
+  </div>
+
+  <script>
+    var btn = document.getElementById('themeToggle');
+    if (btn) {
+      btn.addEventListener('click', function() {
+        var next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem('theme', next);
+      });
+    }
+  </script>
+</body>
+</html>
