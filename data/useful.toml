@@ -7,7 +7,7 @@ title = "latex-preview-nvim"
 url = "https://github.com/sonv/latex-preview-nvim"
 description = "A Neovim plugin for live LaTeX preview."
 
-
+[[sections.items]]
 title = "TexViewer"
 url = "https://github.com/sonv/TexViewer"
 description = "A Neovim plugin for live LaTeX viewer that syncs simultaneously."
