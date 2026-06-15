@@ -291,12 +291,19 @@ Background: <a href="https://www.youtube.com/watch?v=bJX8fVsq5oQ">fluid simulati
 Electromagnetism
 </div>
 <p><span class="math display">\[
-\nabla\cdot\mathbf E=\frac{\rho}{\varepsilon_0},
-\qquad
-\nabla\times\mathbf B-\frac1{c^2}\frac{\partial\mathbf E}{\partial t}
-=\mu_0\mathbf J
+\begin{aligned}
+\nabla\cdot\mathbf E
+  &amp;= \frac{\rho}{\varepsilon_0},\\
+\nabla\cdot\mathbf B
+  &amp;= 0,\\
+\nabla\times\mathbf E
+  &amp;= -\frac{\partial\mathbf B}{\partial t},\\
+\nabla\times\mathbf B
+  &amp;= \mu_0\mathbf J
+     +\mu_0\varepsilon_0\frac{\partial\mathbf E}{\partial t}.
+\end{aligned}
 \]</span></p>
-<p>Electric and magnetic fields are functions on space and time. The symbols <span class="math inline">\(\nabla\)</span> and <span class="math inline">\(\frac{\partial}{\partial t}\)</span> describe how those fields vary.</p>
+<p>Electric and magnetic fields are functions on space and time. The symbols <span class="math inline">\(\nabla\cdot\)</span>, <span class="math inline">\(\nabla\times\)</span>, and <span class="math inline">\(\frac{\partial}{\partial t}\)</span> describe how those fields vary.</p>
 </div>
 <div class="media-credit" data-markdown="1">
 Background: <a href="https://www.youtube.com/watch?v=GoRaZllXCL0">Maxwell equation video</a>, YouTube.
@@ -531,9 +538,9 @@ Theory: <a href="https://activecalculus.org/prelude/sec-changing-functions-model
 <div class="label" data-markdown="1">
 Definition
 </div>
-<p>A function <span class="math inline">\(f\)</span> assigns to each input <span class="math inline">\(x\)</span> in a set <span class="math inline">\(X\)</span> exactly one output <span class="math inline">\(f(x)\)</span>.</p>
+<p>A function <span class="math inline">\(f\)</span> assigns to each input <span class="math inline">\(x\)</span> in a set <span class="math inline">\(D\)</span> exactly one output <span class="math inline">\(f(x)\)</span>.</p>
 <p><span class="math display">\[
-f:X\to E, \qquad y=f(x)
+f:D\to E, \qquad y=f(x)
 \]</span></p>
 </div>
 <div class="grid-2 mt-4" data-markdown="1">

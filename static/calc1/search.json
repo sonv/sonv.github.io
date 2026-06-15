@@ -319,7 +319,7 @@
     "href": "slides/01-functions-sequences/slides.html#maxwell-fields-and-waves",
     "title": "Calculus 1",
     "section": "Maxwell: Fields And Waves",
-    "text": "Maxwell: Fields And Waves\n\n\n\n\n\n\n\nElectromagnetism\n\n\\[\n\\nabla\\cdot\\mathbf E=\\frac{\\rho}{\\varepsilon_0},\n\\qquad\n\\nabla\\times\\mathbf B-\\frac1{c^2}\\frac{\\partial\\mathbf E}{\\partial t}\n=\\mu_0\\mathbf J\n\\]\nElectric and magnetic fields are functions on space and time. The symbols \\(\\nabla\\) and \\(\\frac{\\partial}{\\partial t}\\) describe how those fields vary.\n\n\nBackground: Maxwell equation video, YouTube."
+    "text": "Maxwell: Fields And Waves\n\n\n\n\n\n\n\nElectromagnetism\n\n\\[\n\\begin{aligned}\n\\nabla\\cdot\\mathbf E\n  &= \\frac{\\rho}{\\varepsilon_0},\\\\\n\\nabla\\cdot\\mathbf B\n  &= 0,\\\\\n\\nabla\\times\\mathbf E\n  &= -\\frac{\\partial\\mathbf B}{\\partial t},\\\\\n\\nabla\\times\\mathbf B\n  &= \\mu_0\\mathbf J\n     +\\mu_0\\varepsilon_0\\frac{\\partial\\mathbf E}{\\partial t}.\n\\end{aligned}\n\\]\nElectric and magnetic fields are functions on space and time. The symbols \\(\\nabla\\cdot\\), \\(\\nabla\\times\\), and \\(\\frac{\\partial}{\\partial t}\\) describe how those fields vary.\n\n\nBackground: Maxwell equation video, YouTube."
   },
   {
     "objectID": "slides/01-functions-sequences/slides.html#einstein-space-time-curvature",
@@ -382,7 +382,7 @@
     "href": "slides/01-functions-sequences/slides.html#function-domain-range",
     "title": "Calculus 1",
     "section": "Function, Domain, Range",
-    "text": "Function, Domain, Range\n\n\nDefinition\n\nA function \\(f\\) assigns to each input \\(x\\) in a set \\(X\\) exactly one output \\(f(x)\\).\n\\[\nf:X\\to E, \\qquad y=f(x)\n\\]\n\n\n\n\nDomain\n\n\\[\nD(f)=\\{x\\in \\mathbb{R}: f(x)\\text{ is defined}\\}.\n\\]\n\n\n\nRange\n\n\\[\nE(f)=\\{f(x):x\\in D(f)\\}.\n\\]\n\n\n\nTheory: Active Prelude 1.2; OpenStax 1.1; Stewart 1.1."
+    "text": "Function, Domain, Range\n\n\nDefinition\n\nA function \\(f\\) assigns to each input \\(x\\) in a set \\(D\\) exactly one output \\(f(x)\\).\n\\[\nf:D\\to E, \\qquad y=f(x)\n\\]\n\n\n\n\nDomain\n\n\\[\nD(f)=\\{x\\in \\mathbb{R}: f(x)\\text{ is defined}\\}.\n\\]\n\n\n\nRange\n\n\\[\nE(f)=\\{f(x):x\\in D(f)\\}.\n\\]\n\n\n\nTheory: Active Prelude 1.2; OpenStax 1.1; Stewart 1.1."
   },
   {
     "objectID": "slides/01-functions-sequences/slides.html#graph-of-a-function",
