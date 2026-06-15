@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Readings – Calculus 1</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-158031087360bce0ff56dc785ce39e06.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-5685cd926c25366c96d9f1407e584118.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-158031087360bce0ff56dc785ce39e06.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const queryPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+    const darkModeDefault = queryPrefersDark.matches;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    queryPrefersDark.addEventListener("change", e => {
+      if(window.localStorage.getItem("quarto-color-scheme") !== null)
+        return;
+      const alternate = e.matches
+      toggleColorMode(alternate);
+      localAlternateSentinel = e.matches ? 'alternate' : 'default'; // this is used alongside local storage!
+      toggleGiscusIfUsed(alternate, darkModeDefault);
+    });
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Calculus 1</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./schedule.html"> 
+<span class="menu-text">Schedule</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./readings.html" aria-current="page"> 
+<span class="menu-text">Readings</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./sessions/index.html"> 
+<span class="menu-text">Notes</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./slides/index.html"> 
+<span class="menu-text">Slides</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./project.html"> 
+<span class="menu-text">Project</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#main-roles" id="toc-main-roles" class="nav-link active" data-scroll-target="#main-roles">Main Roles</a></li>
+  <li><a href="#textbooks-and-references" id="toc-textbooks-and-references" class="nav-link" data-scroll-target="#textbooks-and-references">Textbooks and References</a></li>
+  <li><a href="#session-reading-map" id="toc-session-reading-map" class="nav-link" data-scroll-target="#session-reading-map">Session Reading Map</a></li>
+  <li><a href="#reading-pattern" id="toc-reading-pattern" class="nav-link" data-scroll-target="#reading-pattern">Reading Pattern</a></li>
+  <li><a href="#suggested-student-instructions" id="toc-suggested-student-instructions" class="nav-link" data-scroll-target="#suggested-student-instructions">Suggested Student Instructions</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Readings</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="main-roles" class="level2">
+<h2 class="anchored" data-anchor-id="main-roles">Main Roles</h2>
+<div class="resource-list">
+<ul>
+<li><strong>Active Prelude to Calculus / Active Calculus</strong>: lecture preparation, conceptual questions, and in-class activities.</li>
+<li><strong>OpenStax Calculus</strong>: primary student reading and routine practice.</li>
+<li><strong>Stewart Calculus</strong>: additional practice, especially computational fluency and exam-style problems.</li>
+<li><strong>Instructor notes</strong>: local coverage for sequences, parametric curves, advanced integration techniques, and the ODE topics beyond the single-variable Active Calculus core.</li>
+</ul>
+</div>
+</section>
+<section id="textbooks-and-references" class="level2">
+<h2 class="anchored" data-anchor-id="textbooks-and-references">Textbooks and References</h2>
+<div class="resource-list">
+<ul>
+<li>Boelkins, M. (n.d.). <em>Active Prelude to Calculus</em>. <a href="https://activecalculus.org/prelude/" class="uri">https://activecalculus.org/prelude/</a></li>
+<li>Boelkins, M. (n.d.). <em>Active Calculus</em> (2nd ed.). <a href="https://activecalculus.org/single/" class="uri">https://activecalculus.org/single/</a></li>
+<li>Strang, G., &amp; Herman, E. “Jed”. (2016). <em>Calculus Volume 1</em>. OpenStax. <a href="https://openstax.org/books/calculus-volume-1/pages/1-introduction" class="uri">https://openstax.org/books/calculus-volume-1/pages/1-introduction</a></li>
+<li>Strang, G., &amp; Herman, E. “Jed”. (2016). <em>Calculus Volume 2</em>. OpenStax. <a href="https://openstax.org/books/calculus-volume-2/pages/1-introduction" class="uri">https://openstax.org/books/calculus-volume-2/pages/1-introduction</a></li>
+<li>Stewart, J. (2016). <em>Calculus: Early Transcendentals</em> (8th ed., metric version). Cengage Learning.</li>
+</ul>
+</div>
+</section>
+<section id="session-reading-map" class="level2">
+<h2 class="anchored" data-anchor-id="session-reading-map">Session Reading Map</h2>
+<p>Section numbers are keyed to Active Prelude to Calculus, Active Calculus, OpenStax Calculus Volumes 1-2, and Stewart Calculus: Early Transcendentals. If students use a different Stewart edition, assign by section title rather than number.</p>
+<div class="compact-table">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: right;">Session</th>
+<th>Topic</th>
+<th>Active Calculus</th>
+<th>OpenStax</th>
+<th>Stewart</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td>Functions</td>
+<td>Active Prelude: <a href="https://activecalculus.org/prelude/sec-changing-functions-models.html">1.2</a>, <a href="https://activecalculus.org/prelude/sec-changing-aroc.html">1.3</a>, <a href="https://activecalculus.org/prelude/sec-changing-linear.html">1.4</a>, <a href="https://activecalculus.org/prelude/sec-changing-quadratic.html">1.5</a>, <a href="https://activecalculus.org/prelude/sec-changing-composite.html">1.6</a>, <a href="https://activecalculus.org/prelude/sec-changing-inverse.html">1.7</a>, <a href="https://activecalculus.org/prelude/sec-changing-transformations.html">1.8</a>, <a href="https://activecalculus.org/prelude/sec-changing-combining.html">1.9</a></td>
+<td>Vol. 1: <a href="https://openstax.org/books/calculus-volume-1/pages/1-1-review-of-functions">1.1</a>, <a href="https://openstax.org/books/calculus-volume-1/pages/1-2-basic-classes-of-functions">1.2</a>, <a href="https://openstax.org/books/calculus-volume-1/pages/1-3-trigonometric-functions">1.3</a>, <a href="https://openstax.org/books/calculus-volume-1/pages/1-4-inverse-functions">1.4</a>, <a href="https://openstax.org/books/calculus-volume-1/pages/1-5-exponential-and-logarithmic-functions">1.5</a></td>
+<td>1.1-1.5</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td>Sequences; limits; infinite quantities and infinitesimals</td>
+<td>Instructor notes for sequences; <a href="https://activecalculus.org/single/sec-1-1-vel.html">1.1</a>, <a href="https://activecalculus.org/single/sec-1-2-lim.html">1.2</a>, <a href="https://activecalculus.org/single/sec-1-7-lim-cont-diff.html">1.7</a></td>
+<td>Vol. 2: <a href="https://openstax.org/books/calculus-volume-2/pages/5-1-sequences">5.1</a>; Vol. 1: <a href="https://openstax.org/books/calculus-volume-1/pages/2-1-a-preview-of-calculus">2.1</a>, <a href="https://openstax.org/books/calculus-volume-1/pages/2-2-the-limit-of-a-function">2.2</a>, <a href="https://openstax.org/books/calculus-volume-1/pages/2-3-the-limit-laws">2.3</a>, <a href="https://openstax.org/books/calculus-volume-1/pages/2-4-continuity">2.4</a>, <a href="https://openstax.org/books/calculus-volume-1/pages/2-5-the-precise-definition-of-a-limit">2.5</a>, <a href="https://openstax.org/books/calculus-volume-1/pages/4-6-limits-at-infinity-and-asymptotes">4.6</a></td>
+<td>11.1; 2.1-2.6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td>Continuity; derivatives; higher derivatives; differentials</td>
+<td><a href="https://activecalculus.org/single/sec-1-3-derivative-pt.html">1.3</a>, <a href="https://activecalculus.org/single/sec-1-4-derivative-fxn.html">1.4</a>, <a href="https://activecalculus.org/single/sec-1-5-units.html">1.5</a>, <a href="https://activecalculus.org/single/sec-1-6-second-d.html">1.6</a>, <a href="https://activecalculus.org/single/sec-1-7-lim-cont-diff.html">1.7</a>, <a href="https://activecalculus.org/single/sec-1-8-tan-line-approx.html">1.8</a>; <a href="https://activecalculus.org/single/sec-2-1-elem-rules.html">2.1</a>, <a href="https://activecalculus.org/single/sec-2-2-sin-cos.html">2.2</a>, <a href="https://activecalculus.org/single/sec-2-3-prod-quot.html">2.3</a>, <a href="https://activecalculus.org/single/sec-2-4-other-trig.html">2.4</a>, <a href="https://activecalculus.org/single/sec-2-5-chain.html">2.5</a>, <a href="https://activecalculus.org/single/sec-2-6-inverse.html">2.6</a></td>
+<td>Vol. 1: <a href="https://openstax.org/books/calculus-volume-1/pages/2-4-continuity">2.4</a>, <a href="https://openstax.org/books/calculus-volume-1/pages/3-1-defining-the-derivative">3.1</a>, <a href="https://openstax.org/books/calculus-volume-1/pages/3-2-the-derivative-as-a-function">3.2</a>, <a href="https://openstax.org/books/calculus-volume-1/pages/3-3-differentiation-rules">3.3</a>, <a href="https://openstax.org/books/calculus-volume-1/pages/3-4-derivatives-as-rates-of-change">3.4</a>, <a href="https://openstax.org/books/calculus-volume-1/pages/3-5-derivatives-of-trigonometric-functions">3.5</a>, <a href="https://openstax.org/books/calculus-volume-1/pages/3-6-the-chain-rule">3.6</a>, <a href="https://openstax.org/books/calculus-volume-1/pages/3-7-derivatives-of-inverse-functions">3.7</a>, <a href="https://openstax.org/books/calculus-volume-1/pages/3-8-implicit-differentiation">3.8</a>, <a href="https://openstax.org/books/calculus-volume-1/pages/3-9-derivatives-of-exponential-and-logarithmic-functions">3.9</a>, <a href="https://openstax.org/books/calculus-volume-1/pages/4-2-linear-approximations-and-differentials">4.2</a></td>
+<td>2.5, 2.7-2.8; 3.1-3.11</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td>Taylor and Maclaurin; curve sketching; optimization</td>
+<td><a href="https://activecalculus.org/single/sec-3-3-tests.html">3.3</a>, <a href="https://activecalculus.org/single/sec-3-4-families.html">3.4</a>, <a href="https://activecalculus.org/single/sec-3-5-optimization.html">3.5</a>, <a href="https://activecalculus.org/single/sec-3-6-applied-opt.html">3.6</a>; <a href="https://activecalculus.org/single/sec-8-1-linear-poly.html">8.1</a>, <a href="https://activecalculus.org/single/sec-8-2-taylor-poly.html">8.2</a></td>
+<td>Vol. 1: <a href="https://openstax.org/books/calculus-volume-1/pages/4-1-related-rates">4.1</a>, <a href="https://openstax.org/books/calculus-volume-1/pages/4-2-linear-approximations-and-differentials">4.2</a>, <a href="https://openstax.org/books/calculus-volume-1/pages/4-3-maxima-and-minima">4.3</a>, <a href="https://openstax.org/books/calculus-volume-1/pages/4-4-the-mean-value-theorem">4.4</a>, <a href="https://openstax.org/books/calculus-volume-1/pages/4-5-derivatives-and-the-shape-of-a-graph">4.5</a>, <a href="https://openstax.org/books/calculus-volume-1/pages/4-6-limits-at-infinity-and-asymptotes">4.6</a>, <a href="https://openstax.org/books/calculus-volume-1/pages/4-7-applied-optimization-problems">4.7</a>; Vol. 2: <a href="https://openstax.org/books/calculus-volume-2/pages/6-3-taylor-and-maclaurin-series">6.3</a>, <a href="https://openstax.org/books/calculus-volume-2/pages/6-4-working-with-taylor-series">6.4</a></td>
+<td>4.1-4.7; 11.10-11.11</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">5</td>
+<td>Parametric curves</td>
+<td>Instructor notes</td>
+<td>Vol. 2: <a href="https://openstax.org/books/calculus-volume-2/pages/7-1-parametric-equations">7.1</a>, <a href="https://openstax.org/books/calculus-volume-2/pages/7-2-calculus-of-parametric-curves">7.2</a></td>
+<td>10.1-10.2</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">6</td>
+<td>Indefinite integrals; substitution; integration by parts</td>
+<td><a href="https://activecalculus.org/single/sec-5-2-FTC2.html">5.2</a>, <a href="https://activecalculus.org/single/sec-5-3-substitution.html">5.3</a>, <a href="https://activecalculus.org/single/sec-5-4-parts.html">5.4</a></td>
+<td>Vol. 1: <a href="https://openstax.org/books/calculus-volume-1/pages/4-10-antiderivatives">4.10</a>, <a href="https://openstax.org/books/calculus-volume-1/pages/5-4-integration-formulas-and-the-net-change-theorem">5.4</a>, <a href="https://openstax.org/books/calculus-volume-1/pages/5-5-substitution">5.5</a>, <a href="https://openstax.org/books/calculus-volume-1/pages/5-6-integrals-involving-exponential-and-logarithmic-functions">5.6</a>; Vol. 2: <a href="https://openstax.org/books/calculus-volume-2/pages/3-1-integration-by-parts">3.1</a></td>
+<td>4.9; 5.4-5.5; 7.1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">7</td>
+<td>Rational, irrational, and trigonometric integrals</td>
+<td>Instructor notes</td>
+<td>Vol. 2: <a href="https://openstax.org/books/calculus-volume-2/pages/3-2-trigonometric-integrals">3.2</a>, <a href="https://openstax.org/books/calculus-volume-2/pages/3-3-trigonometric-substitution">3.3</a>, <a href="https://openstax.org/books/calculus-volume-2/pages/3-4-partial-fractions">3.4</a>, <a href="https://openstax.org/books/calculus-volume-2/pages/3-5-other-strategies-for-integration">3.5</a></td>
+<td>7.2-7.5</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">8</td>
+<td>Definite integrals; Riemann sums; FTC</td>
+<td><a href="https://activecalculus.org/single/sec-4-1-velocity-distance.html">4.1</a>, <a href="https://activecalculus.org/single/sec-4-2-Riemann.html">4.2</a>, <a href="https://activecalculus.org/single/sec-4-3-definite-integral.html">4.3</a>, <a href="https://activecalculus.org/single/sec-4-4-FTC.html">4.4</a></td>
+<td>Vol. 1: <a href="https://openstax.org/books/calculus-volume-1/pages/5-1-approximating-areas">5.1</a>, <a href="https://openstax.org/books/calculus-volume-1/pages/5-2-the-definite-integral">5.2</a>, <a href="https://openstax.org/books/calculus-volume-1/pages/5-3-the-fundamental-theorem-of-calculus">5.3</a></td>
+<td>5.1-5.3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">9</td>
+<td>Applications of definite integrals</td>
+<td><a href="https://activecalculus.org/single/sec-6-1-area.html">6.1</a>, <a href="https://activecalculus.org/single/sec-6-2-volume.html">6.2</a>, <a href="https://activecalculus.org/single/sec-6-4-physics.html">6.4</a></td>
+<td>Vol. 1: <a href="https://openstax.org/books/calculus-volume-1/pages/6-1-areas-between-curves">6.1</a>, <a href="https://openstax.org/books/calculus-volume-1/pages/6-2-determining-volumes-by-slicing">6.2</a>, <a href="https://openstax.org/books/calculus-volume-1/pages/6-3-volumes-of-revolution-cylindrical-shells">6.3</a>, <a href="https://openstax.org/books/calculus-volume-1/pages/6-4-arc-length-of-a-curve-and-surface-area">6.4</a>, <a href="https://openstax.org/books/calculus-volume-1/pages/6-5-physical-applications">6.5</a>, <a href="https://openstax.org/books/calculus-volume-1/pages/6-6-moments-and-centers-of-mass">6.6</a></td>
+<td>6.1-6.5; 8.1-8.4</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">10</td>
+<td>Improper integrals</td>
+<td><a href="https://activecalculus.org/single/sec-6-5-improper.html">6.5</a>; instructor notes</td>
+<td>Vol. 2: <a href="https://openstax.org/books/calculus-volume-2/pages/3-7-improper-integrals">3.7</a></td>
+<td>7.8</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">11</td>
+<td>Differential equations; separable first-order equations</td>
+<td><a href="https://activecalculus.org/single/sec-7-2-qualitative.html">7.2</a>, <a href="https://activecalculus.org/single/sec-7-4-separable.html">7.4</a></td>
+<td>Vol. 2: <a href="https://openstax.org/books/calculus-volume-2/pages/4-1-basics-of-differential-equations">4.1</a>, <a href="https://openstax.org/books/calculus-volume-2/pages/4-2-direction-fields-and-numerical-methods">4.2</a>, <a href="https://openstax.org/books/calculus-volume-2/pages/4-3-separable-equations">4.3</a></td>
+<td>9.1-9.3</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">12</td>
+<td>Homogeneous, linear, and Bernoulli first-order equations</td>
+<td><a href="https://activecalculus.org/single/sec-7-2-qualitative.html">7.2</a> for qualitative context; instructor notes for methods</td>
+<td>Vol. 2: <a href="https://openstax.org/books/calculus-volume-2/pages/4-5-first-order-linear-equations">4.5</a>; instructor notes for homogeneous and Bernoulli equations</td>
+<td>9.5; instructor notes</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">13</td>
+<td>Second-order linear ODEs; constant coefficients</td>
+<td>Instructor notes</td>
+<td>Instructor notes</td>
+<td>17.1</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">14</td>
+<td>Nonhomogeneous second-order ODEs</td>
+<td>Instructor notes</td>
+<td>Instructor notes</td>
+<td>17.2-17.3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">15</td>
+<td>Systems of first-order linear ODEs</td>
+<td>Instructor notes</td>
+<td>Instructor notes</td>
+<td>9.6 for modeling context; instructor notes for linear systems</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="reading-pattern" class="level2">
+<h2 class="anchored" data-anchor-id="reading-pattern">Reading Pattern</h2>
+<p>Each session should have a compact reading assignment:</p>
+<ol type="1">
+<li>A short pre-class section from Active Prelude, Active Calculus, or instructor notes.</li>
+<li>A matching OpenStax section for textbook-style explanations.</li>
+<li>A small Stewart problem set for optional extra practice.</li>
+</ol>
+</section>
+<section id="suggested-student-instructions" class="level2">
+<h2 class="anchored" data-anchor-id="suggested-student-instructions">Suggested Student Instructions</h2>
+<p>Before class, students should read for the main idea rather than mastery. They should bring:</p>
+<ul>
+<li>one question about a definition</li>
+<li>one worked example they can explain</li>
+<li>one problem where they got stuck</li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>MT1003 Calculus 1</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>Built with Quarto</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
