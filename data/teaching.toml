@@ -1,4 +1,14 @@
 [[institutions]]
+id = "hcmut"
+name = "Ho Chi Minh City University of Technology"
+
+[[institutions.terms]]
+term = "Summer 2026"
+courses = [
+  { title = "MT1003: Calculus 1", url = "/calc1/" },
+]
+
+[[institutions]]
 id = "fulbright"
 name = "Fulbright University Vietnam"
 

@@ -11,7 +11,11 @@
       <li>
         <div class="course-meta">{{ term.term }}</div>
         {% for course in term.courses %}
+        {% if course is string %}
         <div class="course-title">{{ course }}</div>
+        {% else %}
+        <div class="course-title"><a href="{{ course.url }}">{{ course.title }}</a></div>
+        {% endif %}
         {% endfor %}
       </li>
       {% endfor %}
