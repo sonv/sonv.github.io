@@ -1,0 +1,123 @@
+:root {
+  --course-accent: #1f6f68;
+  --course-accent-2: #24588f;
+  --course-warm: #9b6a1f;
+}
+
+.course-lang-toggle {
+  align-items: center;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 999px;
+  box-shadow: var(--shadow-md);
+  display: flex;
+  gap: 0.2rem;
+  padding: 0.2rem;
+  position: fixed;
+  right: 1rem;
+  top: 4.25rem;
+  z-index: 80;
+}
+
+.course-lang-toggle button {
+  background: transparent;
+  border: 0;
+  border-radius: 999px;
+  color: var(--text-secondary);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1;
+  padding: 0.45rem 0.62rem;
+}
+
+.course-lang-toggle button[aria-pressed="true"] {
+  background: var(--course-accent);
+  color: white;
+}
+
+html[data-course-lang="en"] .lang-vi,
+html[data-course-lang="vi"] .lang-en {
+  display: none !important;
+}
+
+.course-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  margin: 1.25rem 0;
+}
+
+.course-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-left: 0.35rem solid var(--course-accent);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.course-card strong {
+  color: var(--course-accent);
+}
+
+.compact-table {
+  overflow-x: auto;
+}
+
+.compact-table table {
+  min-width: 44rem;
+}
+
+.article__content table,
+.section-page__content table {
+  font-size: 0.92rem;
+}
+
+.article__content th,
+.article__content td,
+.section-page__content th,
+.section-page__content td {
+  vertical-align: top;
+}
+
+.slide-link {
+  align-items: center;
+  background: linear-gradient(135deg, rgba(31, 111, 104, 0.16), rgba(36, 88, 143, 0.16));
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+.slide-link strong {
+  color: var(--text-primary);
+}
+
+.slide-link span {
+  color: var(--text-secondary);
+}
+
+@media (max-width: 720px) {
+  .course-lang-toggle {
+    bottom: 1rem;
+    right: 1rem;
+    top: auto;
+  }
+
+  .slide-link {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+}
+
+@media print {
+  .course-lang-toggle {
+    display: none !important;
+  }
+}
+
