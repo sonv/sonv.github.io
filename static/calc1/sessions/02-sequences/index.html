@@ -146,7 +146,7 @@
                 },
                 
                 
-                "wordCount": 6506,
+                "wordCount": 7132,
                 
                 "inLanguage": "en"
             }
@@ -309,17 +309,8 @@
                     
                     
                     <li class="toc__item">
-                        <a href="https://www.tsvan.xyz/calc1/project/" class="toc__link ">
-                            <span class="toc__number">2.</span>
-                            Project
-                        </a>
-                    </li>
-                    
-                    
-                    
-                    <li class="toc__item">
                         <a href="https://www.tsvan.xyz/calc1/slides/" class="toc__link ">
-                            <span class="toc__number">3.</span>
+                            <span class="toc__number">2.</span>
                             Lecture Slides
                         </a>
                     </li>
@@ -330,6 +321,20 @@
 
             
             
+            
+            
+            <div class="toc__section">
+                <a href="https://www.tsvan.xyz/calc1/project/" class="toc__section-title ">Project</a>
+                <ul class="toc__list">
+                    
+                    <li class="toc__item">
+                        <a href="https://www.tsvan.xyz/calc1/project/dtq1/" class="toc__link ">
+                            Project Groups: DTQ1
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
             
             
             <div class="toc__section">
@@ -690,6 +695,29 @@ $$</p>
 \lim_{n\to\infty}\Big(1+\tfrac1n\Big)^n=e\approx 2.718281828.
 $$</p>
 <p>The theorem guarantees a limit exists even before we can name it.</p>
+<h3 id="why-left-1-tfrac1n-right-n-increases-and-is-bounded">Why $\left(1+\tfrac1n\right)^n$ Increases And Is Bounded</h3>
+<p>Let $x_n=\left(1+\tfrac1n\right)^n$.</p>
+<p><strong>Increasing (AM-GM).</strong> Apply the AM-GM inequality to the $n+1$ numbers made of $n$ copies of $1+\tfrac1n$ and one copy of $1$:</p>
+<p>$$
+\sqrt[n+1]{\left(1+\tfrac1n\right)^{n}\cdot 1}\le \frac{n\left(1+\tfrac1n\right)+1}{n+1}=\frac{n+2}{n+1}=1+\frac{1}{n+1}.
+$$</p>
+<p>Raising both sides to the power $n+1$ gives $x_n\le \left(1+\tfrac{1}{n+1}\right)^{n+1}=x_{n+1}$, so $(x_n)$ is increasing.</p>
+<p><strong>Bounded above (Bernoulli).</strong> Let $y_n=\left(1+\tfrac1n\right)^{n+1}$. By Bernoulli the ratio</p>
+<p>$$
+\frac{y_n}{y_{n+1}}=\left(1+\frac{1}{n(n+2)}\right)^{n+2}\frac{n}{n+1}\ge\left(1+\frac1n\right)\frac{n}{n+1}=1,
+$$</p>
+<p>so $y_n$ is decreasing. Since $x_n\lt y_n$,</p>
+<p>$$
+x_n\lt y_n\le y_1=(1+1)^2=4.
+$$</p>
+<p>Hence $2\le x_n\lt 4$ for all $n$.</p>
+<p><strong>Conclusion.</strong> $(x_n)$ is increasing and bounded above, so by the monotone bounded theorem it converges; the limit is $e\approx 2.718$.</p>
+<p><strong>Sharper bound (binomial).</strong> The binomial expansion gives a tighter ceiling:</p>
+<p>$$
+x_n=\sum_{k=0}^{n}\binom{n}{k}\frac{1}{n^{k}}\le \sum_{k=0}^{n}\frac{1}{k!}\le 1+\sum_{k=1}^{n}\frac{1}{2^{,k-1}}\lt 3,
+$$</p>
+<p>using $\binom{n}{k}n^{-k}=\frac1{k!}\prod_{j=1}^{k-1}\left(1-\frac jn\right)\le\frac1{k!}$ and $k!\ge 2^{,k-1}$. So in fact $2\le e\lt 3$.</p>
+<p><strong>Increasing via Bernoulli.</strong> Monotonicity also follows from Bernoulli: $\dfrac{x_{n+1}}{x_n}=\left(1-\dfrac{1}{(n+1)^2}\right)^{n+1}\dfrac{n+1}{n}\ge\left(1-\dfrac{1}{n+1}\right)\dfrac{n+1}{n}=1$.</p>
 <h3 id="recurrence-plus-monotone-bounded-worked-example">Recurrence Plus Monotone Bounded (worked example)</h3>
 <p>Let $a_1=\sqrt2$ and $a_{n+1}=\sqrt{2a_n}$.</p>
 <ol>
@@ -947,6 +975,29 @@ $$</p>
 \lim_{n\to\infty}\Big(1+\tfrac1n\Big)^n=e\approx 2.718281828.
 $$</p>
 <p>Định lý bảo đảm giới hạn tồn tại ngay cả khi ta chưa gọi tên được nó.</p>
+<h3 id="vi-sao-left-1-tfrac1n-right-n-tang-va-bi-chan">Vì sao $\left(1+\tfrac1n\right)^n$ tăng và bị chặn</h3>
+<p>Đặt $x_n=\left(1+\tfrac1n\right)^n$.</p>
+<p><strong>Tăng (AM-GM).</strong> Áp dụng bất đẳng thức AM-GM cho $n+1$ số gồm $n$ số $1+\tfrac1n$ và một số $1$:</p>
+<p>$$
+\sqrt[n+1]{\left(1+\tfrac1n\right)^{n}\cdot 1}\le \frac{n\left(1+\tfrac1n\right)+1}{n+1}=\frac{n+2}{n+1}=1+\frac{1}{n+1}.
+$$</p>
+<p>Nâng hai vế lên lũy thừa $n+1$ được $x_n\le \left(1+\tfrac{1}{n+1}\right)^{n+1}=x_{n+1}$, nên $(x_n)$ tăng.</p>
+<p><strong>Bị chặn trên (Bernoulli).</strong> Đặt $y_n=\left(1+\tfrac1n\right)^{n+1}$. Theo Bernoulli, tỷ số</p>
+<p>$$
+\frac{y_n}{y_{n+1}}=\left(1+\frac{1}{n(n+2)}\right)^{n+2}\frac{n}{n+1}\ge\left(1+\frac1n\right)\frac{n}{n+1}=1,
+$$</p>
+<p>nên $y_n$ giảm. Vì $x_n\lt y_n$,</p>
+<p>$$
+x_n\lt y_n\le y_1=(1+1)^2=4.
+$$</p>
+<p>Do đó $2\le x_n\lt 4$ với mọi $n$.</p>
+<p><strong>Kết luận.</strong> $(x_n)$ tăng và bị chặn trên, nên theo định lý đơn điệu bị chặn nó hội tụ; giới hạn là $e\approx 2.718$.</p>
+<p><strong>Cận chặt hơn (nhị thức).</strong> Khai triển nhị thức cho cận nhỏ hơn:</p>
+<p>$$
+x_n=\sum_{k=0}^{n}\binom{n}{k}\frac{1}{n^{k}}\le \sum_{k=0}^{n}\frac{1}{k!}\le 1+\sum_{k=1}^{n}\frac{1}{2^{,k-1}}\lt 3,
+$$</p>
+<p>dùng $\binom{n}{k}n^{-k}=\frac1{k!}\prod_{j=1}^{k-1}\left(1-\frac jn\right)\le\frac1{k!}$ và $k!\ge 2^{,k-1}$. Do đó thực ra $2\le e\lt 3$.</p>
+<p><strong>Tăng theo Bernoulli.</strong> Tính đơn điệu cũng suy ra từ Bernoulli: $\dfrac{x_{n+1}}{x_n}=\left(1-\dfrac{1}{(n+1)^2}\right)^{n+1}\dfrac{n+1}{n}\ge\left(1-\dfrac{1}{n+1}\right)\dfrac{n+1}{n}=1$.</p>
 <h3 id="truy-hoi-cung-don-dieu-bi-chan-vi-du-da-giai">Truy hồi cùng đơn điệu bị chặn (ví dụ đã giải)</h3>
 <p>Cho $a_1=\sqrt2$ và $a_{n+1}=\sqrt{2a_n}$.</p>
 <ol>

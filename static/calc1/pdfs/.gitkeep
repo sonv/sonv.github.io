@@ -1,0 +1,3 @@
+# Place exported slide PDFs here: functions.pdf, sequences.pdf
+# These are served at /pdfs/ and are NOT wiped by the slide build (unlike static/slides/).
+# Generate them with Slidev's in-browser exporter or `npm run export:slides:all`.
