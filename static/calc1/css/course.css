@@ -42,6 +42,33 @@ html[data-course-lang="vi"] .lang-en {
   display: none !important;
 }
 
+.course-lang {
+  overflow-x: auto;
+}
+
+.course-lang table {
+  min-width: 44rem;
+}
+
+mjx-container[jax="SVG"]:not([display="true"]) {
+  display: inline-block !important;
+  max-width: none !important;
+  overflow: visible !important;
+  vertical-align: baseline !important;
+  width: auto !important;
+}
+
+mjx-container[jax="SVG"]:not([display="true"]) > svg {
+  display: inline-block !important;
+  max-width: none !important;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  max-width: 100% !important;
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+}
+
 .course-grid {
   display: grid;
   gap: 1rem;
@@ -120,4 +147,3 @@ html[data-course-lang="vi"] .lang-en {
     display: none !important;
   }
 }
-
