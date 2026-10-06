@@ -14,9 +14,9 @@
         </div>
         <div class="course-meta">{{ item.description }}</div>
         {% if item.preview is defined %}
-        <a class="plugin-preview" href="{{ item.url }}" rel="noopener noreferrer" aria-label="{{ item.title }} on GitHub">
-          <video src="{{ get_url(path=item.preview) }}"{% if item.poster is defined %} poster="{{ get_url(path=item.poster) }}"{% endif %} autoplay muted loop playsinline preload="metadata" aria-hidden="true"></video>
-        </a>
+        <button type="button" class="plugin-preview" aria-label="Play {{ item.title }} preview">
+          <video src="{{ get_url(path=item.preview) }}"{% if item.poster is defined %} poster="{{ get_url(path=item.poster) }}"{% endif %} muted loop playsinline preload="none"></video>
+        </button>
         {% endif %}
       </li>
       {% endfor %}
@@ -25,8 +25,12 @@
   {% endfor %}
 </main>
 <script>
-  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    document.querySelectorAll('.plugin-preview video').forEach(function(v) { v.removeAttribute('autoplay'); v.pause(); });
-  }
+  document.querySelectorAll('.plugin-preview').forEach(function(btn) {
+    var v = btn.querySelector('video');
+    var label = btn.getAttribute('aria-label');
+    btn.addEventListener('click', function() { v.paused ? v.play() : v.pause(); });
+    v.addEventListener('play', function() { btn.classList.add('playing'); btn.setAttribute('aria-label', label.replace('Play', 'Pause')); });
+    v.addEventListener('pause', function() { btn.classList.remove('playing'); btn.setAttribute('aria-label', label); });
+  });
 </script>
 {% endblock content %}
