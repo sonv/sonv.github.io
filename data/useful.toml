@@ -6,8 +6,12 @@ label = "Neovim Plugins"
 title = "latex-preview-nvim"
 url = "https://github.com/sonv/latex-preview-nvim"
 description = "A Neovim plugin for live LaTeX preview."
+preview = "/assets/previews/latex-preview-nvim.mp4"
+poster = "/assets/previews/latex-preview-nvim.jpg"
 
 [[sections.items]]
 title = "TexViewer"
 url = "https://github.com/sonv/TexViewer"
 description = "A Neovim plugin for live LaTeX viewer that syncs simultaneously."
+preview = "/assets/previews/texviewer.mp4"
+poster = "/assets/previews/texviewer.jpg"

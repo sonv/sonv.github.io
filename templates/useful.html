@@ -13,10 +13,20 @@
           <a href="{{ item.url }}" rel="noopener noreferrer">{{ item.title }}</a>
         </div>
         <div class="course-meta">{{ item.description }}</div>
+        {% if item.preview is defined %}
+        <a class="plugin-preview" href="{{ item.url }}" rel="noopener noreferrer" aria-label="{{ item.title }} on GitHub">
+          <video src="{{ get_url(path=item.preview) }}"{% if item.poster is defined %} poster="{{ get_url(path=item.poster) }}"{% endif %} autoplay muted loop playsinline preload="metadata" aria-hidden="true"></video>
+        </a>
+        {% endif %}
       </li>
       {% endfor %}
     </ul>
   </section>
   {% endfor %}
 </main>
+<script>
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.querySelectorAll('.plugin-preview video').forEach(function(v) { v.removeAttribute('autoplay'); v.pause(); });
+  }
+</script>
 {% endblock content %}

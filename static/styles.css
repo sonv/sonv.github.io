@@ -561,6 +561,28 @@ section {
   margin-top: 0.5rem;
 }
 
+/* ── Plugin previews ──────────────────────────────────── */
+.plugin-preview {
+  display: block;
+  max-width: 640px;
+  margin-top: 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  overflow: hidden;
+  line-height: 0;
+  transition: border-color 0.2s;
+}
+
+.plugin-preview:hover { border-color: var(--accent); }
+
+.plugin-preview video {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  display: block;
+  background: #0b0d12;
+}
+
 
 /* ══════════════════════════════════════════════════════
    404 page
